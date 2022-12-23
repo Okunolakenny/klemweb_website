@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration page</title>
+    <link rel="stylesheet" href="apply.css">
+</head>
+<body>
+<section class="wrap">
+    <div class="contents">
+        <!-- The logo and head container -->
+        <div class="image">
+            <img src="./assets/images/newlogo.jpg" alt="logo">
+        </div>
+        
+        <div class="down">
+            <div class="up">
+                <p>STUDENT REGISTRATION FORM</p>
+            </div>
+        </div>
+
+        <!-- The form starts here -->
+       <div class="form-container">
+        <form action="" method="POST">
+            <!-- First section of the form (fortname, lastname, middlename and the passport container) -->
+            <div class="names-passport">
+                <div class="names">
+                    <label for="firstname">First Name</label> <br>
+                    <input type="text" id="firstname" placeholder="Enter your First name" required class="in"> <br>
+
+                    <label for="middlename">Middle Name</label> <br>
+                    <input type="text" id="middlename" placeholder="Enter your first name" class="in"> <br>
+
+                    <label for="lastname">Last Name (Surname)</label> <br>
+                    <input type="text" id="lastname" placeholder="Enter your Last name" required class="in">
+                </div>
+                <div class="image-preview-container">
+                    <small id="small">Tap to change the Image</small>
+                    <img src="" id="preview-selected-image" />
+                        <label for="file-upload" id="uploadBtn">Click here to Upload Image</label>
+                    <input type="file" id="file-upload" accept="image/*" onchange="previewImage(event);" />
+                    
+                </div>
+            </div>
+
+            <!-- The first section, part B of the form(DOB, Phone No, Email and Residential address) -->
+            <div class="address">
+                <div class="add">
+                    <span>
+                    <label for="dob">Date of Birth</label> <br>
+                    <input type="text" id="dob" placeholder="19/03/1999" required class="in">
+                </span>
+
+                    <span>
+                        <label for="phone">Phone Number</label> <br>
+                    <input type="tel" id="phone" placeholder="07013456789" required class="in">
+                    </span>
+
+                    <span>
+                        <label for="email">Email Address</label> <br>
+                    <input type="email" id="email" placeholder="klemweb@gmail.com" required>
+                </span>
+                </div>
+                <div class="residential-address">
+                    
+                    <span>
+                        <label for="resAddress">Residential Address</label> <br>
+                    <input type="text" id="resAddress" placeholder="Your Residential Address" required>
+                </span>
+                </div>
+            </div>
+
+            <!-- The second section of the form(Guarantor's Information) -->
+            <div class="guarantor">
+                <div class="txt">Guarantor Information</div>
+                <span>
+                    <label for="guarantorName">Guarantor Full Name</label> <br>
+                <input type="text" id="guarantorName" placeholder="Enter Full Name" required>
+            </span> <br>
+         
+            <div class="occupation-email">
+            <span>
+                <label for="guarantorOccupation">Guarantor Occupation</label> <br>
+            <input type="text" id="guarantorOccupation" placeholder="Enter Occupation" required>
+        </span>
+
+        <span>
+            <label for="guarantorEmail">Guarantor Email</label> <br>
+        <input type="email" id="guarantorEmail" placeholder="Enter Email" required>
+        </span>
+        </div>
+
+        <span class="gphone">
+            <label for="guarantorPhone">Guarantor Phone No.</label> <br>
+        <input type="tel" id="guarantorPhone" placeholder="Enter Phone Number" required>
+        </span>
+            </div>
+
+            <!-- The third section of the form(Courses of Choice) -->
+            <div class="courses-wrapper">
+                <h3>Course(s) Of Choice</h3>
+                <div class="courses">
+                <span class="check">
+                <input type="checkbox" name="graphicsDesign" value="graphicsDesign"> <span> Graphics Design</span>
+                </span>
+
+                <span class="check">
+                <input type="checkbox" name="softwareDevelopment" value="softwareDevelopment"> <span>Software Development</span>
+                </span>
+
+            <span class="check">
+                <input type="checkbox" name="DataAnalysis" value="DataAnalysis"> <span>Data Analysis</span>
+            </span>
+
+            <span class="check">
+                <input type="checkbox" name="digitalMarketing" value="digitalMarketing"> <span>Digital Marketing</span>
+                </span>
+
+                <span class="check">
+                <input type="checkbox" name="cyberSecurity" value="cyberSecurity"> <span>Cyber Security</span>
+                </span>
+
+            <span class="check">
+                <input type="checkbox" name="artificialIntelligence" value="artificialIntelligence"> <span>Artificial Intelligence</span>
+            </span>
+
+        </div>
+        <br>
+
+        <!-- The Media section(How do you hear about Us) -->
+        <h3>How did you hear about Us?</h3>
+        <div class="how">
+            <div>
+        <input type="radio" name="medium" value="socialMedia"> <span>Social Media</span>
+            </div>
+
+        <div>
+            <input type="radio" name="medium" value="Friends"> <span>From friends</span>
+        </div>
+
+        <div>
+        <input type="radio" name="medium" value="others"> <span>Other means</span>
+        </div>
+
+        </div>
+
+        <hr>
+        <!-- The conditions part -->
+        <div class="cond-container">
+        <span class="conditions">
+            <input type="checkbox" name="certify" value="certify"> <span> I certify that the information provided by me is correct</span>
+            </span>
+            <span class="conditions">
+                <input type="checkbox" name="understand" value="understan"> <span> I understand to submit all the documents in Original for verification</span>
+                </span>
+            </div>
+
+            <!-- The signature and date section -->
+            <div class="lines">
+                <div class="line">
+                    <hr>
+                    <small>Student's Signature</small>
+                </div>
+                <div class="line">
+                    <hr>
+                    <small>Date</small>
+                </div>
+                <div class="line">
+                    <hr>
+                    <small>Guarantor's Signature</small>
+                </div>
+                <div class="line">
+                    <hr>
+                    <small>Date</small>
+                </div>
+            </div>
+            <!-- The submit button -->
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+</section>
+
+<script src="./apply.js"></script>
+</body>
+</html>

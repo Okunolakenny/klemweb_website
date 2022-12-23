@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+body{
+    max-width: 100%;
+}
+
+#apply{
+    max-width: 100%;
+}
+
+.contents{
+    background: #F1F1E6;
+    padding: 2% 20%;
+    justify-content: center;
+    position: relative;
+}
+/* The logo and the head container */
+.image{
+    width: 40%;
+    margin: auto;
+    position: relative;
+}
+img{
+    margin: 5% auto;
+    position: relative;
+    width: 100%;
+    display: block;
+}
+.down, .up{
+    position: relative;
+    margin: auto;
+    width: 70%;
+    height: 65px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background: inherit;
+    border: 1px solid #0A2A66;
+    border-radius: 30px;
+}
+
+.up{
+    width: 99%;
+    height: 92%;
+    background: #0A2A66 ;
+    font-weight: bold;
+    display: flex;
+    color: white;
+    align-items: center;
+}
+
+/* First section of the form (fortname, lastname, middlename and the passport container) */
+.form-container{
+    position: relative;
+    width: 100%;
+}
+.names-passport{
+    display: flex;
+    position: relative;
+    margin-top: 50px;
+    width: 100%;
+    justify-content: space-between;
+}
+.names{
+    width: 60%;
+}
+
+input{
+    margin: 10px 0;
+    background: none;
+    font-size: 14px;
+    border: 1px solid #6489FF;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 5px 0;
+    outline: none;
+    width: 80%;
+}
+.image-preview-container {
+    width: 20%;
+    height: 150px;
+    position: relative;
+    text-align: center;
+    margin: auto;
+    margin-right: 0 !important;
+    border: 1px solid #6489FF;
+    padding: 0;
+    border-radius: 0;
+}
+.image-preview-container small{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    color: #2041ae;
+    display: none;
+    top: -13%;
+}
+.image-preview-container img {
+    width: 100%;
+    height: 100%;
+    display: none;
+    margin: 0;
+}
+.image-preview-container input {
+    display: none;
+}
+#uploadBtn{
+            position: absolute;
+            width: 70%;
+            top: 35%;
+            left: 15%;
+            height: fit-content;
+            color: #083994;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+            margin: auto;
+            line-height: 1.4;
+            background: none;
+            text-align: center;
+            display: block;
+}
+#uploadBtn.active{
+    width: 100%;
+    left: 0;
+    color: white;
+    font-size: 15px;
+    top: 95%;
+    transform: translateY(-50%);
+    background: gray;
+}
+.image-preview-container:hover #uploadBtn{
+    display: block;
+}
+
+/* The first section, part B of the form(DOB, Phone No, Email and Residential address) */
+.add{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 8px;
+    margin-right: 0 !important;
+}
+.add span{
+    flex-basis: 31%;
+}
+label{
+    font-weight: bold;
+    color: #083994;
+    width: 100%;
+}
+label span{
+    color:red;
+}
+.residential-address{
+    margin-top: 20px;
+}
+.residential-address input, .guarantor input{
+    width: 100%;
+}
+#guarantorPhone{
+    width: 45%;
+}
+
+/* The second section of the form(Guarantor's Information) */
+.guarantor{
+    position: relative;
+    width: 100%;
+    justify-content: center;
+}
+.guarantor .txt{
+    margin: 35px auto;
+    text-align: center;
+    background: #0A2A66;
+    color: white;
+    padding: 15px;
+    font-weight: bold;
+}
+.occupation-email{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.occupation-email span{
+    flex-basis: 45%;
+    line-height: 2;
+}
+
+/* The third section of the form (Courses of choice) styles */
+.courses-wrapper{
+    margin-top: 20px;
+}
+.courses-wrapper h3{
+    color: #0A2A66;
+}
+.courses{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.check{
+    display: flex;
+    align-items: center;
+    flex-basis: 30%;
+}
+.check input[type=checkbox]{
+    width: 25px;
+    cursor: pointer;
+    height: 25px;
+}
+.check span, .how span{
+    color: #083994;
+    width: 100%;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+/* The media section(How do you hear about us) */
+.how{
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    align-items: center;
+    gap: 1rem;
+}
+.how div{
+    align-items: center;
+    display: flex;
+}
+.how span{
+    color: #083994;
+    margin-left: 5px;
+}
+input[type=radio]{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+hr{
+    height: 1px;
+    width: 60%;
+    margin-top: 10px;
+    background: #083994;
+}
+
+/* The conditions part */
+.cond-container{
+    margin-top: 20px;
+}
+
+.conditions{
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    flex-basis: 30%;
+}
+.conditions input[type=checkbox]{
+    width: 20px;
+    margin: 0;
+    height: 20px;
+    cursor: pointer;
+}
+.conditions span{
+    color: #083994;
+    width: 100%;
+    align-items: center;
+    font-size: 16px;
+    margin-left: 5px;
+}
+/* Signature and date styles */
+.lines{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-right: 0;
+    flex-wrap: wrap;
+    gap: 4rem;
+    margin-top: 50px;
+}
+.line {
+    flex-basis: 35%;
+    text-align: center;
+    font-weight: bold;
+    color: #0A2A66;
+}
+.line hr{
+    width: 100%;
+}
+
+/* The submit button */
+button{
+    margin: 20px auto;
+    display: block;
+    padding: 10px 50px;
+    font-weight: bold;
+    color: white;
+    background: #0A2A66;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 17px;
+    transition: 200ms;
+}
+button:hover{
+    background: #2041ae;
+}
+
+@media screen and (max-width: 990px){ 
+    .contents{
+        padding: 2% 10%;
+    }
+    .down, .up{
+        width: 100%;
+    }
+
+    .up{
+        width: 99%;
+    }
+    .names{
+        width: 60%;
+    }
+    .image-preview-container{
+        width: 30%;
+        height: 200px;
+    }
+    .names input{
+        width: 100%;
+    }
+    
+    input{
+        margin: 15px 0;
+        margin-bottom: 10px !important;
+        width: 100%;
+        padding: 12px 0;
+    }
+
+}
+
+@media screen and (max-width: 575px){ 
+    
+    .contents{
+        padding: 2% 5%;
+    }
+    .down, .up{
+        width: 100%;
+    }
+
+    .up{
+        width: 99%;
+    }
+
+    .names-passport{
+    flex-direction: column-reverse;
+    gap: 1rem;
+
+    }
+    .names{
+        width: 100%;
+    }
+    .image-preview-container{
+        width: 45%;
+        margin: auto !important;
+    }
+
+    input{
+        margin: 15px 0;
+        margin-bottom: 10px !important;
+        width: 100%;
+        padding: 12px 0;
+    }
+    
+    .add{
+        flex-direction: column;
+    }
+    .add span{
+        flex-basis: 100%;
+        
+    }
+    .comb{
+        flex-direction: column;
+    }
+    #guarantorPhone{
+        width: 100%;
+    }
+
+}

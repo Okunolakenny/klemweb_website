@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration page</title>
+    <link rel="stylesheet" href="./css/apply.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+
+</head>
+
+<body>
+    <a href="https://wa.me/08136528369" target="_blank"><img src="./Assets/images/what3-removebg-preview.png" alt="" id="chat" title="Chat with us"></a>
+    <div id="service-dropdown">
+        <div>
+            <h1>Courses</h1>
+            <a href="software.html">Software Engineering</a>
+            <a href="artificial.html" class="ai_link"> Artificial Intelligence</a>
+            <a href="cyber.html">Cyber Security</a>
+            <a href="product.html"> Product Design</a>
+            <a href="digital.html"> Digital Marketting</a>
+            <a href="data.html"> Data Analysis</a>
+        </div>
+        <div>
+            <h1>Services</h1>
+            <a href="contact.html#hire">Hire a Talent</a>
+            <a href="contact.html#request">Request a Service </a>
+        </div>
+    </div>
+    <header>
+        <div class="container">
+            <a href="./index.html"><img src="./Assets/images/Nav-logo.png" alt="Company logo">
+            </a>
+
+            <div class="links" id="links">
+                <a href="about.html">About</a>
+                <div class="service-cont"> <a href="services.html">Services</a><span id="arrow"><i
+                            class="fas fa-angle-down" id="service-arrow"></i></span>
+                    <span id="arrow-up"><i class="fas fa-angle-up" id="service-arrow-up"></i></span>
+                </div>
+
+                <a href="contact.html">Contact</a>
+                <a href="registration.html" class="apply">Apply Now</a>
+
+            </div>
+            <span id="bar"><i class="fas fa-bars"></i></span>
+            <span id="time"><i class="fas fa-times"></i></span>
+        </div>
+    </header>
+    <section class="wrap">
+        <div class="contents">
+            <!-- The logo and head container -->
+
+
+            <!-- The form starts here -->
+            <div class="form-container">
+                <form action="" id="form-pdf" method ="POST" enctype="text/plain">
+
+                    <div class="image">
+                        <img src="./assets/images/newlogo.jpg" alt="logo">
+                    </div>
+
+                    <div class="down">
+                        <div class="up">
+                            <p>STUDENT REGISTRATION FORM</p>
+                        </div>
+                    </div>
+                    <!-- First section of the form (fortname, lastname, middlename and the passport container) -->
+                    <div class="names-passport">
+                        <div class="names">
+                            <label for="firstname">First Name</label> <br>
+                            <input type="text" id="firstname" placeholder="Enter your First name" required class="in">
+                            <br>
+
+                            <label for="middlename">Middle Name</label> <br>
+                            <input type="text" id="middlename" placeholder="Enter your first name" class="in"> <br>
+
+                            <label for="lastname">Last Name (Surname)</label> <br>
+                            <input type="text" id="lastname" placeholder="Enter your Last name" required class="in">
+                        </div>
+                        <div class="image-preview-container">
+                            <small id="small">Tap to change the Image</small>
+                            <img src="" id="preview-selected-image" />
+                            <label for="file-upload" id="uploadBtn">Click here to Upload Image</label>
+                            <input type="file" id="file-upload" accept="image/*" onchange="previewImage(event);" />
+
+                        </div>
+                    </div>
+
+                    <!-- The first section, part B of the form(DOB, Phone No, Email and Residential address) -->
+                    <div class="address">
+                        <div class="add">
+                            <span>
+                                <label for="dob">Date of Birth</label> <br>
+                                <input type="text" id="dob" placeholder="19/03/1999" required class="in">
+                            </span>
+
+                            <span>
+                                <label for="phone">Phone Number</label> <br>
+                                <input type="tel" id="phone" placeholder="07013456789" required class="in">
+                            </span>
+
+                            <span>
+                                <label for="email">Email Address</label> <br>
+                                <input type="email" id="email" placeholder="klemweb@gmail.com" required>
+                            </span>
+                        </div>
+                        <div class="residential-address">
+
+                            <span>
+                                <label for="resAddress">Residential Address</label> <br>
+                                <input type="text" id="resAddress" placeholder="Your Residential Address" required>
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- The second section of the form(Guarantor's Information) -->
+                    <div class="guarantor">
+                        <div class="txt">Guarantor Information</div>
+                        <span>
+                            <label for="guarantorName">Guarantor Full Name</label> <br>
+                            <input type="text" id="guarantorName" placeholder="Enter Full Name" required>
+                        </span> <br>
+
+                        <div class="occupation-email">
+                            <span>
+                                <label for="guarantorOccupation">Guarantor Occupation</label> <br>
+                                <input type="text" id="guarantorOccupation" placeholder="Enter Occupation" required>
+                            </span>
+
+                            <span>
+                                <label for="guarantorEmail">Guarantor Email</label> <br>
+                                <input type="email" id="guarantorEmail" placeholder="Enter Email" required>
+                            </span>
+                        </div>
+
+                        <span class="gphone">
+                            <label for="guarantorPhone">Guarantor Phone No.</label> <br>
+                            <input type="tel" id="guarantorPhone" placeholder="Enter Phone Number" required>
+                        </span>
+                    </div>
+
+                    <!-- The third section of the form(Courses of Choice) -->
+                    <div class="courses-wrapper">
+                        <h3>Course(s) Of Choice</h3>
+                        <div class="courses">
+                            <span class="check">
+                                <input type="checkbox" name="graphicsDesign" value="graphicsDesign" id="graphics"> <label for="graphics"> Graphics
+                                    Design</label>
+                            </span>
+
+                            <span class="check">
+                                <input type="checkbox" name="softwareDevelopment" value="softwareDevelopment" id="software">
+                                <label for="software">Software Development</label>
+                            </span>
+
+                            <span class="check">
+                                <input type="checkbox" name="DataAnalysis" value="DataAnalysis" id="data-analysis"> <label for="data-analysis">Data
+                                    Analysis</label>
+                            </span>
+
+                            <span class="check">
+                                <input type="checkbox" name="digitalMarketing" value="digitalMarketing" id="digital"> <label for="digital">Digital
+                                    Marketing</label>
+                            </span>
+
+                            <span class="check">
+                                <input type="checkbox" name="cyberSecurity" value="cyberSecurity" id="cyber"> <label for="cyber">Cyber
+                                    Security</label>
+                            </span>
+
+                            <span class="check">
+                                <input type="checkbox" name="artificialIntelligence" value="artificialIntelligence" id="artificial">
+                                <label for="artificial">Artificial Intelligence</label>
+                            </span>
+
+                        </div>
+                        <br>
+
+                        <!-- The Media section(How do you hear about Us) -->
+                        <h3>How did you hear about Us?</h3>
+                        <div class="how">
+                            <div>
+                                <input type="radio" name="medium" value="socialMedia" required id="social"> <label for="social">Social
+                                    Media</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" name="medium" value="Friends" required id="friends"> <label for="friends">From friends</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" name="medium" value="others" required id="other"> <label for="other">Other means</label>
+                            </div>
+
+                        </div>
+
+                        <hr>
+                        <!-- The conditions part -->
+                        <div class="cond-container">
+                            <span class="conditions">
+                                <input type="checkbox" name="certify" value="certify" required id="certify"> <label for="certify"> I certify that
+                                    the
+                                    information provided by me is correct</label>
+                            </span>
+                            <span class="conditions">
+                                <input type="checkbox" name="understand" value="understan" required id="understand"> <label for="understand"> I understand
+                                    to
+                                    submit all the documents in Original for verification</label>
+                            </span>
+                        </div>
+
+                        <!-- The signature and date section -->
+                        <div class="lines">
+                            <div class="line">
+                                <hr>
+                                <small>Student's Signature</small>
+                            </div>
+                            <div class="line">
+                                <hr>
+                                <small>Date</small>
+                            </div>
+                            <div class="line">
+                                <hr>
+                                <small>Guarantor's Signature</small>
+                            </div>
+                            <div class="line">
+                                <hr>
+                                <small>Date</small>
+                            </div>
+                        </div>
+                        <!-- The submit button -->
+
+
+                </form>
+                <div class="buttons">
+                    <button type="submit" form="form-pdf" id="sub-btn">Submit</button>
+                    <button type="button" id="submit">Download as pdf</button>
+
+                </div>
+
+            </div>
+        </div>
+        <button id="hidden" style="display: none;"></button>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div>
+                <a href="./index.html"> <img src="./Assets/images/white logo-01.png" alt="" class="logo"></a>
+                <h4>Ojongbodu Police Station, suit 1&2 farmers care building, Oyo-Iseyin Road, 200262. Oyo State,
+                    Nigereia</h4>
+            </div>
+            <div>
+                <h1>About</h1>
+                <a href="about.html">About us</a>
+                <a href="about.html">Meet the lead</a>
+                <a href="about.html">Our values</a>
+                <a href="about.html">Our mission</a>
+            </div>
+            <div>
+                <h1>Services</h1>
+                <a href="services.html">Courses</a>
+                <a href="contact.html#request">Request a service</a>
+                <a href="contact.html#hire">Hire a talent</a>
+            </div>
+            <div>
+                <h1>Contact us</h1>
+                <a href="tel:08136528369">08136528369</a>
+                <a href="www.klemweb@gmail.com">www.klemweb@gmail.com</a>
+
+            </div>
+            <div>
+                <a href="registration.html">Apply Now!</a>
+            </div>
+        </div>
+        <hr>
+        <div class="copy">
+            <div class="copyy">
+                <p class="">All rights reserved &copy Copy Right Klemweb &nbsp <span id="footer-date"> </span>&nbsp
+                    Designed by Web-shakers team.</p>
+            </div>
+            <div class="icons">
+                <a href=""><i class="fab fa-facebook"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-linkedin"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+
+
+
+            </div>
+        </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.0/html2pdf.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.1/html2pdf.bundle.min.js"
+        integrity="sha512vDKWohFHe2vkVWXHp3tKvIxxXg0pJxeid5eo+UjdjME3DBFBn2F8yWOE0XmiFcFbXxrEOR1JriWEno5Ckpn15A=="
+        crossorigin="anonymous"></script>
+    <script src="./js/all.min.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/footer.js"></script>
+    <script src="./js/apply.js"></script>
+    <script>
+        const submit = document.querySelector("#submit")
+        const formpdf = document.querySelector("#form-pdf")
+        const subbtn = document.querySelector("#sub-btn")
+        const hidden = document.querySelector("#hidden")
+        useCORS: true
+        var opt = {
+            margin: [.5, .8, .5, .8],
+            filename: 'application.pdf',
+            image: { type: 'jpeg', quality: 1 },
+            html2canvas: { scale: 2, useCORS: true },
+            jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+        };
+
+        submit.addEventListener('click', function () {
+            html2pdf(formpdf, opt)
+        })
+
+
+        // formpdf.addEventListener('submit', () => {
+
+        //     function thanks(){
+        //         alert('Thanks for registering')
+
+        //         setTimeout(thanks, 3000);
+        //     }
+        
+            // document.querySelector('#submitBtn').setAttribute('href', './success.html' )
+            // el.preventDefault()
+            // hidden.click()
+        // })
+        // hidden.addEventListener('click', () => {
+        //     location.replace("success.html")
+        // })
+
+        
+        formpdf.addEventListener('submit',
+
+            function thanks(){
+                alert('Thanks for registering')
+            })
+
+
+    </script>
+</body>
+
+</html>
