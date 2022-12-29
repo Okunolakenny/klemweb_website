@@ -6,14 +6,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contact Us</title>
-        <link rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css"
-            integrity="sha384-z4tVnCr80ZcL0iufVdGQSUzNvJsKjEtqYZjiQrrYKlpGow+btDHDfQWkFjoaz/Zr" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css" integrity="sha384-z4tVnCr80ZcL0iufVdGQSUzNvJsKjEtqYZjiQrrYKlpGow+btDHDfQWkFjoaz/Zr" crossorigin="anonymous">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
-            rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./css/all.min.css">
         <link rel="stylesheet" href="./css/header.css">
         <link rel="stylesheet" href="./css/footer.css">
@@ -26,12 +22,12 @@
         <div id="service-dropdown">
             <div>
                 <h1>Courses</h1>
-                <a href="software.html">Software Engineering</a>
-                <a href="artificial.html" class="ai_link"> Artificial Intelligence</a>
-                <a href="cyber.html">Cyber Security</a>
-                <a href="product.html"> Product Design</a>
-                <a href="digital.html"> Digital Marketting</a>
-                <a href="data.html"> Data Analysis</a>
+                <a href="software.html" data-target="se">Software Engineering</a>
+                <a href="artificial.html" data-target="ai"> Artificial Intelligence</a>
+                <a href="cyber.html" data-target="cs">Cyber Security</a>
+                <a href="product.html" data-target="pd"> Product Design</a>
+                <a href="digital.html" data-target="dm"> Digital Marketting</a>
+                <a href="data.html" data-target="da"> Data Analysis</a>
             </div>
             <div>
                 <h1>Services</h1>
@@ -46,8 +42,7 @@
 
                 <div class="links" id="links">
                     <a href="about.html">About</a>
-                    <div class="service-cont"> <a href="services.html">Services</a><span id="arrow"><i
-                                class="fas fa-angle-down" id="service-arrow"></i></span>
+                    <div class="service-cont"> <a href="services.html">Services</a><span id="arrow"><i class="fas fa-angle-down" id="service-arrow"></i></span>
                         <span id="arrow-up"><i class="fas fa-angle-up" id="service-arrow-up"></i></span>
                     </div>
 
@@ -68,10 +63,7 @@
         </div>
         <div class="sec-two">
             <div class="map-container">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.4289708664282!2d3.9068661140414127!3d7.850092308499209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103759fe1e02a3ff%3A0x832fd64c10485378!2sKlemweb%20Integrated%20Business%20LTD!5e0!3m2!1sen!2sng!4v1668700450963!5m2!1sen!2sng"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.4289708664282!2d3.9068661140414127!3d7.850092308499209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103759fe1e02a3ff%3A0x832fd64c10485378!2sKlemweb%20Integrated%20Business%20LTD!5e0!3m2!1sen!2sng!4v1668700450963!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="form-container">
                 <h1 class="heading">Contact Us</h1>
@@ -121,29 +113,29 @@
                     <input type="tel" name="hire_tel" placeholder="Enter phone number">
                     <div class="radios">
                         <div>
-                            <input type="checkbox" name="talent" value="Software Engineering" id="software"  class="checkbox">
+                            <input type="checkbox" name="talent" value="Software Engineering" id="software" class="checkbox">
                             <label for="software">Software Engineering</label>
                         </div>
                         <div>
                             <input type="checkbox" name="talent" value="Product Design" id="product_design" class="checkbox">
                             <label for="product_design">Product Design</label>
                         </div>
-                        
+
                         <div>
-                            <input type="checkbox" name="talent" value="Artificial Intelligence" id="artificial"  class="checkbox">
+                            <input type="checkbox" name="talent" value="Artificial Intelligence" id="artificial" class="checkbox">
                             <label for="artificial">Artificial Intelligence</label>
                         </div>
                         <div>
                             <input type="checkbox" name="talent" value="Cyber Security" id="software" class="checkbox">
-                            <label for="cyber"  >Cyber Security</label>
+                            <label for="cyber">Cyber Security</label>
                         </div>
                         <div>
                             <input type="checkbox" name="talent" value=" Digital Marketting" id="digital" class="checkbox">
-                            <label for="digital"  >Digital Marketting</label>
+                            <label for="digital">Digital Marketting</label>
                         </div>
                         <div>
                             <input type="checkbox" name="talent" value="Data Analysis" id="data" class="checkbox">
-                            <label for="data"  >Data Analysis</label>
+                            <label for="data">Data Analysis</label>
                         </div>
                     </div>
                     <textarea name="additional" placeholder="Project Description"></textarea>
@@ -177,7 +169,7 @@
                 <div>
                     <h1>About</h1>
                     <a href="about.html">About us</a>
-                    <a href="about.html">Meet the lead</a>
+                    <a href="about.html#thelead">Meet the lead</a>
                     <a href="about.html">Our values</a>
                     <a href="about.html">Our mission</a>
                 </div>
@@ -216,11 +208,10 @@
             </div>
         </footer>
         <script src="./js/all.min.js"></script>
-        <script type="text/javascript"
-            src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"></script>
         <script src="./js/header.js"></script>
         <script src="./js/footer.js"></script>
-
+        <script src="./js/headerServices.js"></script>
     </body>
 
 </html>
