@@ -14,11 +14,11 @@
 /* whatsapp chat styling */
 #chat{
     position: fixed;
-    bottom: 50px;
+    bottom: 30px;
     right: 30px;
     z-index: 200;
-    height: 80px;
-    width: 80px;
+    height: 50px;
+    width: 50px;
     transform: scale(0.7);
     animation: 2.5s scale infinite;
 }
@@ -566,13 +566,18 @@ html {
     position: relative;
 }
 #klemite .container .img{
-    background-image: url(../Assets/images/Klemweb_general_photo.jpg);
-    background-position: center;
-    height: 500px;
+    /* background-image: url(../Assets/images/webite.jpg); */
+    /* background-position: center; */
+    height: 430px;
     width: 55%;
-    border-bottom-right-radius: 50px;
-    border-top-left-radius: 50px;
 }
+#klemite .container .img img{
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    height: 100%;
+    width: 100%;
+}
+
 #klemite .container .webite{
     width: 40%;
     margin: auto;

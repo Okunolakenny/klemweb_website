@@ -21,6 +21,7 @@ body {
     height: 100vh;
     margin-top: 6rem;
     background-image: url(../Assets/images/about1.jpg);
+
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
