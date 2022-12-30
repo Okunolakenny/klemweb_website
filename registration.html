@@ -28,8 +28,8 @@
             </div>
             <div>
                 <h1>Services</h1>
-                <a href="contact.html#hire">Hire a Talent</a>
-                <a href="contact.html#request">Request a Service </a>
+            <a href="talent.html">Hire a Talent</a>
+            <a href="request.html">Request a Service </a>
             </div>
         </div>
         <header>
@@ -58,7 +58,7 @@
 
                 <!-- The form starts here -->
                 <div class="form-container">
-                    <form action="" id="form-pdf" method="POST" enctype="text/plain">
+                <form action="" id="form-pdf" method ="POST"  enctype="text/plain">
 
                         <div class="image">
                             <img src="./assets/images/newlogo.jpg" alt="logo">
@@ -86,7 +86,7 @@
                                 <small id="small">Tap to change the Image</small>
                                 <img src="" id="preview-selected-image" />
                                 <label for="file-upload" id="uploadBtn">Click here to Upload Image</label>
-                                <input type="file" id="file-upload" accept="image/*" onchange="previewImage(event);" />
+                            <input type="file" id="file-upload" accept="image/*" onchange="previewImage(event);" class="in"/>
 
                             </div>
                         </div>
@@ -106,14 +106,14 @@
 
                                 <span>
                                     <label for="email">Email Address</label> <br>
-                                    <input type="email" id="email" placeholder="klemweb@gmail.com" required>
+                                <input type="email" id="email" placeholder="klemweb@gmail.com" required class="in">
                                 </span>
                             </div>
                             <div class="residential-address">
 
                                 <span>
                                     <label for="resAddress">Residential Address</label> <br>
-                                    <input type="text" id="resAddress" placeholder="Your Residential Address" required>
+                                <input type="text" id="resAddress" placeholder="Your Residential Address" required class="in">
                                 </span>
                             </div>
                         </div>
@@ -123,24 +123,24 @@
                             <div class="txt">Guarantor Information</div>
                             <span>
                                 <label for="guarantorName">Guarantor Full Name</label> <br>
-                                <input type="text" id="guarantorName" placeholder="Enter Full Name" required>
+                            <input type="text" id="guarantorName" placeholder="Enter Full Name" required class="in">
                             </span> <br>
 
                             <div class="occupation-email">
                                 <span>
                                     <label for="guarantorOccupation">Guarantor Occupation</label> <br>
-                                    <input type="text" id="guarantorOccupation" placeholder="Enter Occupation" required>
+                                <input type="text" id="guarantorOccupation" placeholder="Enter Occupation" required class="in">
                                 </span>
 
                                 <span>
                                     <label for="guarantorEmail">Guarantor Email</label> <br>
-                                    <input type="email" id="guarantorEmail" placeholder="Enter Email" required>
+                                <input type="email" id="guarantorEmail" placeholder="Enter Email" required class="in">
                                 </span>
                             </div>
 
                             <span class="gphone">
                                 <label for="guarantorPhone">Guarantor Phone No.</label> <br>
-                                <input type="tel" id="guarantorPhone" placeholder="Enter Phone Number" required>
+                            <input type="tel" id="guarantorPhone" placeholder="Enter Phone Number" required class="in">
                             </span>
                         </div>
 
@@ -203,12 +203,13 @@
                             <!-- The conditions part -->
                             <div class="cond-container">
                                 <span class="conditions">
-                                    <input type="checkbox" name="certify" value="certify" required id="certify"> <label for="certify"> I certify that
+                                <input type="checkbox" name="certify" value="certify" required id="certify" class="checks"> <label for="certify"> I certify that
                                         the
                                         information provided by me is correct</label>
                                 </span>
                                 <span class="conditions">
-                                    <input type="checkbox" name="understand" value="understan" required id="understand"> <label for="understand"> I understand
+                                <input type="checkbox" name="understand" value="understan" required id="understand"
+                                class="checks1"> <label for="understand" > I understand
                                         to
                                         submit all the documents in Original for verification</label>
                                 </span>
@@ -265,8 +266,8 @@
                 <div>
                     <h1>Services</h1>
                     <a href="services.html">Courses</a>
-                    <a href="contact.html#request">Request a service</a>
-                    <a href="contact.html#hire">Hire a talent</a>
+                <a href="request.html">Request a service</a>
+                <a href="talent.html">Hire a talent</a>
                 </div>
                 <div>
                     <h1>Contact us</h1>
@@ -299,6 +300,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.0/html2pdf.bundle.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.1/html2pdf.bundle.min.js" integrity="sha512vDKWohFHe2vkVWXHp3tKvIxxXg0pJxeid5eo+UjdjME3DBFBn2F8yWOE0XmiFcFbXxrEOR1JriWEno5Ckpn15A==" crossorigin="anonymous"></script>
         <script src="./js/all.min.js"></script>
+    <script src="./js/jquery.js"></script>
         <script src="./js/header.js"></script>
         <script src="./js/footer.js"></script>
         <script src="./js/apply.js"></script>
@@ -317,10 +319,29 @@
                 jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
             };
 
-            submit.addEventListener('click', function () {
-                html2pdf(formpdf, opt)
-            })
+        let inputs = document.querySelectorAll(".in")
 
+            submit.addEventListener('click', function () {
+            downloadPdf()
+        })
+        function downloadPdf() {
+            if ($(".checks").prop("checked") == false && $(".checks1").prop("checked") == false) {
+                return
+            }
+            let notFilled = 0;
+            inputs.forEach(el => {
+                console.log(el.value);
+                    if (el.value == "") {
+                        notFilled++
+                    }
+                    console.log(notFilled);
+            })
+            if (notFilled == 0) {
+                html2pdf(formpdf, opt)
+            }else{
+                console.log(">0");
+            }
+        }
 
             // formpdf.addEventListener('submit', () => {
 
@@ -337,12 +358,11 @@
             // hidden.addEventListener('click', () => {
             //     location.replace("success.html")
             // })
-
-
-            formpdf.addEventListener('submit',
-
-                function thanks () {
+        formpdf.addEventListener('submit', function (e){
+            e.preventDefault();
                     alert('Thanks for registering')
+                // downloadPdf()
+                submit.click();
                 })
 
 
