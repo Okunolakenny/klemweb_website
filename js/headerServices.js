@@ -1,6 +1,4 @@
-let servicesLinks = document.querySelectorAll(
-  "#service-dropdown div:first-child a"
-);
+let servicesLinks = document.querySelectorAll("#service-dropdown a");
 
 servicesLinks.forEach((el) => {
   el.addEventListener("click", function (ev) {
