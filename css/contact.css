@@ -135,7 +135,7 @@ textarea {
     padding: .2rem .7rem;
     border-radius: .5rem;
     border: none;
-    background: #dceeff;
+    /* background: #dceeff; */
     color: #0a2a66;
 }
 
@@ -158,13 +158,30 @@ textarea:focus {
 }
 
 .sec-three {
-    margin: 9rem auto 0;
     width: 90%;
     display: flex;
+    margin: 7rem auto 0;
     gap: 1rem;
+    flex-direction: row;
+    /* height: 550px; */
+    overflow: hidden;
+    border-radius: .5rem;
+}
+.div-form{
+    width: 50%;
+    display: flex;
+    gap: 1rem;
+    overflow: auto;
     flex-direction: column;
 }
-
+.sec-three .image{
+    width: 50%;
+    overflow: hidden;
+}
+.sec-three .image img{
+    object-fit: 100%;
+    height: 100%;
+}
 .head {
     text-align: center;
     color: #0a2a66;
@@ -187,28 +204,27 @@ textarea:focus {
 
 .sec-three .form {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 1rem;
     margin: auto;
     width: 100%;
+    padding: 0 1rem;
     align-items: center;
     justify-content: center;
 }
-
-.sec-three .form input {
+.sec-three .form .input {
     height: 3rem;
-    width: 100%;
+    width: 100% !important;
     padding: .2rem .7rem;
     border-radius: .5rem;
     border: none;
-    background: #dceeff;
+    /* background: #dceeff; */
     font-size: 1.2rem;
     color: #0a2a66;
     box-shadow: 0 0 0 .2rem #0a2a6622;
 }
 
-.sec-three .form input:focus {
+.sec-three .form .input:focus {
     outline: none;
 }
 
@@ -217,7 +233,7 @@ textarea:focus {
     grid-template-columns: repeat(2, 1fr);
     /* justify-content: space-between; */
     align-items: flex-start;
-    width: 100%;
+    width: 100% !important;
 }
 
 .sec-three .form .radios div {
@@ -237,7 +253,7 @@ textarea:focus {
 }
 
 .sec-three .form textarea {
-    width: 100%;
+    width: 100% !important;
     height: 7rem;
     resize: none;
     font-size: 1.2rem;
@@ -339,7 +355,23 @@ textarea:focus {
         width: 70%;
     }
 }
-
+@media screen and (max-width: 864px) {
+    .sec-three{
+        flex-direction: column-reverse;
+        height: fit-content;
+    }
+    .sec-three .image{
+        width: 100%;
+    }
+    .sec-three .div-form{
+        width: 100%;
+    }
+    .sec-three .image img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
 @media screen and (min-width: 991px) {
     .sec-one .content p {
         width: 35%;
@@ -391,6 +423,7 @@ textarea:focus {
 
     .sec-three {
         width: 85%;
+        height: 550px;
     }
 
     .sec-four {
