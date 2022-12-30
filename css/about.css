@@ -26,335 +26,147 @@ body {
 
 
 /* about us section */
-.nextAbout {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: fit-content;
-  /* justify-content: center; */
-}
-
-.aboutUs {
-  width: 80%;
-  display: flex;
-  z-index: 1;
-  border-radius: 25px;
-  background: #d6e1ff;
-  position: relative;;
-}
-
-.aboutUsText {
-  width: 50%;
-  height: 100%;
-  padding: 1rem 3rem;
-  line-height: 1.5rem;
-}
-
-.aboutUsText p {
-  margin-top: 1rem;
-}
-
-.aboutUsImage {
-  width: 50%;
-  background-image: url(../Assets/images/aboutus.jpg);
-  height: 100%;
-  background-size: cover;
-  border-radius: 0 25px 25px 0;
-}
-
-@media screen and (max-width: 900px) {
-  .nextAbout {
+.about{
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-  }
-
-  .aboutUs {
-    width: 70%;
-    padding-bottom: 4rem;
+    position: relative;
+    transform: translateY(-200px);
+    margin-top: 50px;
+    
+    
+}
+.about .contents .text1{
     display: flex;
-    flex-direction: column-reverse;
-    margin-top: -3rem;
-    background: #d6e1ff;
-  }
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 50%;
+    padding: 50px 30px 160px 30px;
+    
 
-  .aboutUsText {
-    width: 95%;
-    height: 50%;
-    font-size: 1.2rem;
+}
+
+.about .contents .text li{
+    list-style-type: disc;
+    line-height: 2.2rem;
+    font-size: 17px;
+
+}
+ .about .contents .text1 li{
+    list-style-type: disc;
     line-height: 1.5rem;
-    padding: 0 1rem;
-  }
-
-  .aboutUsImage {
-    width: 100%;
-    background-image: url(../Assets/images/aboutus.jpg);
-    background-size: cover;
-    border-radius: 25px 25px 0 0;
-  }
-
-  .aboutUsSvg img {
-    width: 30%;
-    height: 30%;
-  }
+    font-size: 17px;
+    text-align: right;
 }
 
-@media screen and (max-width: 600px) {
-  .nextAbout {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .aboutUs {
+.contents{
+    border-radius: 25px;
+    overflow: hidden;
     width: 80%;
+    height: fit-content;
+    background-color: #d6e1ff;
+    margin: auto;
     display: flex;
-    flex-direction: column-reverse;
-    margin-top: -3rem;
-    background: #d6e1ff;
-  }
-
-  .aboutUsText {
-    width: 95%;
-    height: 50%;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    padding: 1rem 1rem;
-  }
-
-
-  
-}
-
-/* mission segment */
-.mission {
-  width: 80%;
-  display: flex;
-  height: 70%;
-  margin-top: 4rem;
-  z-index: 10;
-  border-radius: 25px;
-  background: #d6e1ff;
-}
-
-/* .missionSvg{
-    float: left;
-} */
-.missionText {
-  width: 50%;
-  height: 100%;
-  text-align: right;
-  line-height: 1.5rem;
-  padding: 1rem 3rem;
-}
-
-.missionText p {
-  margin-top: 1rem;
-}
-
-.missionImage {
-  width: 50%;
-  background-image: url(../Assets/images/mission.jpg);
-  background-size: cover;
-  border-radius: 25px 0 0 25px;
-}
-
-.fa-circle {
-  font-size: 6px;
-}
-
-@media screen and (max-width: 900px) {
-  .nextAbout {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+    position: relative;
+    justify-content: space-between;
     align-items: center;
-    /* justify-content: center; */
-  }
 
-  .mission {
-    width: 70%;
-    /* height: 120vh; */
-    padding-bottom: 2rem;
+}
+.contents .text{
     display: flex;
     flex-direction: column;
-    /* margin-top: -3rem; */
-    background: #d6e1ff;
-  }
+    width: 50%;
+    margin: auto;
+    padding: 20px 30px 80px 30px;
+    position: relative;
+    align-items: flex-start;
+    justify-content: flex-start;
 
-  .missionText {
-    width: 95%;
-    height: 50%;
-    font-size: 1.2rem;
-    line-height: 1.5rem;
-    padding: 1rem 1rem;
-  }
-
-  .missionImage {
-    width: 100%;
-    height: 50%;
-    /* margin-top: 1.5rem; */
-    background-image: url(../Assets/images/mission.jpg);
-    background-size: cover;
-    border-radius: 25px 25px 0 0;
-    /* background:rebeccapurple; */
-  }
-
-  .missionSvg img {
-    width: 30%;
-    height: 30%;
-  }
 }
 
-@media screen and (max-width: 600px) {
+.contents .text h3, .about .contents .text1 h3{
+    margin-bottom: 10px;
+    line-height: 1.5rem;
+
+}
+.contents .text p{
+    line-height: 1.5rem;
+    margin-bottom: 10px;
+
+}
+.contents .text img{
+    height: 150px;
+    align-self: flex-start;
+}
+
+
+.contents .image{
+    width: 50%;
+    position: relative;
+    margin: auto;
+    height: 100%;
+}
+.contents .image img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+@media screen and (max-width: 1000px) {
+  
+    .contents{
+        width: 90%;
+    }
+
   
 
-  .mission {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    background: #0648ff;
-  }
-
-  .missionText {
-    width: 95%;
-    height: 50%;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    padding: 1rem 1rem;
-  }
-
-  .missionImage {
-    width: 100%;
-    height: 50%;
-    background-image: url(../Assets/images/mission.jpg);
-    background-size: cover;
-    border-radius: 25px 25px 0 0;
-  }
-
-  .missionSvg img {
-    width: 30%;
-    height: 30%;
-  }
-}
-
-/* vision  */
-.vision {
-  width: 80%;
-  display: flex;
-  height: 70%;
-  margin-top: 4rem;
-  z-index: 10;
-  border-radius: 25px;
-  background: #d6e1ff;
-}
-
-
-.visionText {
-  width: 50%;
-  height: 100%;
-
-  padding: 1rem 3rem;
-}
-
-.visionText p {
-  margin-top: 1.5rem;
-}
-
-.visionImage {
-  width: 50%;
-  background-image: url(../Assets/images/vision.jpg);
-  background-size: cover;
-  border-radius: 0 25px 25px 0;
-}
-
-@media screen and (max-width: 900px) {
   
-
-  .vision {
-    width: 70%;
-    /* height: 130vh; */
-    display: flex;
-    flex-direction: column-reverse;
-    /* margin-top: -3rem; */
-    background: #d6e1ff;
-  }
-
-  .visionText {
-    width: 95%;
-    height: 50%;
-    font-size: 1.2rem;
-    line-height: 1.5rem;
-    padding: 0.5rem 2rem;
-  }
-
-  .visionImage {
-    width: 100%;
-    height: 50%;
-    /* margin-top: 1.5rem; */
-    background-image: url(../Assets/images/vision.jpg);
-    background-size: cover;
-    border-radius: 25px 25px 0 0;
-    /* background:rebeccapurple; */
-  }
-
-  .visionSvg img {
-    width: 30%;
-    height: 30%;
-  }
 }
 
-@media screen and (max-width: 600px) {
-  .nextAbout {
-    width: 100%;
-    height: 500vh;
-    /* margin-top: 2rem; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* justify-content: center; */
-  }
+@media screen and (max-width: 800px) {
+    .contents{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+    .vision{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .contents .text, .about .contents .text1{
+        width:100%;
+    padding: 20px 30px 50px 30px;
+        
+    }
 
-  .vision {
-    width: 70%;
-    /* padding-bottom: 4rem; */
-    display: flex;
-    flex-direction: column-reverse;
-    /* margin-top: -3rem; */
-    background: #d6e1ff;
-  }
+    .contents .image{
+        width:100%;
+        height: 400px;
+    }
 
-  .visionText {
-    width: 95%;
-    height: 50%;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    padding: 1rem 1rem;
-  }
 
-  .visionImage {
-    width: 100%;
-    height: 50%;
-    background-image: url(../Assets/images/vision.jpg);
-    background-size: cover;
-    border-radius: 25px 25px 0 0;
-    /* background:rebeccapurple; */
-  }
-
-  .visionSvg img {
-    width: 30%;
-    height: 30%;
-  }
+  
 }
+
+@media screen and (max-width: 500px) {
+    .contents{
+        width: 85%;
+    }
+    .contents .image{
+        height: 300px;
+    }
+}
+
+
 
 /* board section */
 .board {
   width: 100%;
   position: relative;
   align-items: center;
+  transform: translateY(-150px);
 }
 
 .board > h1 {
@@ -363,6 +175,7 @@ body {
   text-align: center;
   width: 100%;
   padding-top: 2rem;
+  margin-bottom: 100px;
 }
 
 .thelead {
