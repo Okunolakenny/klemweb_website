@@ -503,12 +503,14 @@ html {
 }
 
 #reviews .container .det p {
-  font-size: 25px;
+  font-size: 18px;
+  font-weight: bolder;
   color: black;
 }
 
 #reviews .container .det span {
-  font-size: 18px;
+  font-size: 15px;
+  font-weight: lighter;
   color: black;
 }
 
