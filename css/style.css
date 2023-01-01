@@ -6,6 +6,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Raleway", sans-serif;
+  outline: none !important;
 }
 
 html {
@@ -15,11 +16,11 @@ html {
 /* whatsapp chat styling */
 #chat {
   position: fixed;
-    bottom: 30px;
+  bottom: 30px;
   right: 30px;
   z-index: 200;
-    height: 50px;
-    width: 50px;
+  height: 50px;
+  width: 50px;
   transform: scale(0.7);
   animation: 2.5s scale infinite;
 }
@@ -536,16 +537,16 @@ html {
   position: relative;
 }
 #klemite .container .img {
-    /* background-image: url(../Assets/images/webite.jpg); */
-    /* background-position: center; */
-    height: 430px;
+  /* background-image: url(../Assets/images/webite.jpg); */
+  /* background-position: center; */
+  height: 430px;
   width: 55%;
 }
-#klemite .container .img img{
-    border-top-left-radius: 50px;
+#klemite .container .img img {
+  border-top-left-radius: 50px;
   border-bottom-right-radius: 50px;
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 #klemite .container .webite {
@@ -629,7 +630,7 @@ html {
 .faq {
   background: #d6e1ff;
   width: 100%;
-  border: 3px solid #0a2a66;
+  border: 1px solid #0a2a66;
   margin-bottom: 20px;
   border-radius: 10px;
   padding: 10px 10px;
@@ -650,11 +651,15 @@ html {
   width: 98%;
 }
 
+.faq #icon {
+  /* transition: 0.5s linear all; */
+}
+
 .faq h4 > span:last-child {
   cursor: pointer;
   font-size: 25px;
 }
-.increase {
+.faq.increase {
   height: 50%;
 }
 .rotate {
