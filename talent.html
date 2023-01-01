@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home page</title>
+        <title>Hire talents</title>
         <link rel="stylesheet" href="./css/header.css">
         <link rel="stylesheet" href="./css/style.css">
         <link rel="stylesheet" href="./css/all.min.css">
@@ -43,13 +43,13 @@
                 </a>
 
                 <div class="links" id="links">
-                    <a href="about.html">About </a>
-                    <div class="service-cont"> <a href="services.html">Services</a><span id="arrow"><i class="fas fa-angle-down" id="service-arrow"></i></span>
+                    <a href="about.html" target="_blank">About </a>
+                    <div class="service-cont"> <a href="services.html" target="_blank">Services</a><span id="arrow"><i class="fas fa-angle-down" id="service-arrow"></i></span>
                         <span id="arrow-up"><i class="fas fa-angle-up" id="service-arrow-up"></i></span>
                     </div>
 
-                    <a href="contact.html">Contact </a>
-                    <a href="registration.html" class="apply">Apply Now</a>
+                    <a href="contact.html" target="_blank">Contact </a>
+                    <a href="registration.html" class="apply" target="_blank">Apply Now</a>
 
                 </div>
                 <span id="bar"><i class="fas fa-bars"></i></span>
@@ -57,47 +57,61 @@
             </div>
         </header>
         <div class="sec-three" id="hire">
-            <h1 class="head">Hire A Talent</h1>
+            <div class="image">
+                <img src="./Assets/images/hire a talent.jpg" alt="">
+            </div>
+            <div class="div-form">
+                <h1 class="head">Hire A Talent</h1>
             <p class="tag">
                 Klemweb is one of the top creative digital company, dedicated to enriching digital experiences by
                 providing innovative
             </p>
             <form action="">
                 <div class="form">
-                    <input type="text" name="hire_name" placeholder="Enter your name">
-                    <input type="email" name="hire_email" placeholder="Enter email address">
-                    <input type="tel" name="hire_tel" placeholder="Enter phone number">
+                    <input type="text" name="hire_name" placeholder="Enter your name" class="input">
+                    <input type="email" name="hire_email" placeholder="Enter email address" class="input">
+                    <input type="tel" name="hire_tel" placeholder="Enter phone number" class="input">
                     <div class="radios">
                         <div>
                             <input type="checkbox" name="talent" value="Software Engineering" id="software" class="checkbox">
-                            <label for="software">Software Engineering</label>
+                            <label for="software">Software Engineer</label>
                         </div>
                         <div>
                             <input type="checkbox" name="talent" value="Product Design" id="product_design" class="checkbox">
-                            <label for="product_design">Product Design</label>
+                            <label for="product_design">Product Designer</label>
                         </div>
 
                         <div>
                             <input type="checkbox" name="talent" value="Artificial Intelligence" id="artificial" class="checkbox">
-                            <label for="artificial">Artificial Intelligence</label>
+                            <label for="artificial">Artificial Intelligence Expert</label>
                         </div>
                         <div>
                             <input type="checkbox" name="talent" value="Cyber Security" id="software" class="checkbox">
-                            <label for="cyber">Cyber Security</label>
+                            <label for="cyber">Cyber Security Expert</label>
                         </div>
                         <div>
                             <input type="checkbox" name="talent" value=" Digital Marketting" id="digital" class="checkbox">
-                            <label for="digital">Digital Marketting</label>
+                            <label for="digital">Digital Marketer</label>
                         </div>
                         <div>
                             <input type="checkbox" name="talent" value="Data Analysis" id="data" class="checkbox">
-                            <label for="data">Data Analysis</label>
+                            <label for="data">Data Scientist/ Analyst</label>
                         </div>
                     </div>
+                    <!-- <select name="talent" class="input" size="3" multiple>
+                         <option value="">-- Choose Talents --</option>
+                        <option value="sofware">Software Engineer</option>
+                        <option value="product_design">Product Designer</option>
+                        <option value="ai">Artificial Intelligence</option>
+                        <option value="cyber">Cyber Security Expert</option>
+                        <option value="digital">Digital Marketer</option>
+                        <option value="data_scientist">Data Scientist</option>
+                    </select> -->
                     <textarea name="additional" placeholder="Project Description"></textarea>
                 </div>
                 <input type="submit" value="Hire Talent">
             </form>
+            </div>
         </div>
         <section id="faqs">
             <img src="./Assets/images/question marks.svg" alt="">

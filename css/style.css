@@ -503,12 +503,14 @@ html {
 }
 
 #reviews .container .det p {
-  font-size: 25px;
+  font-size: 18px;
+  font-weight: bolder;
   color: black;
 }
 
 #reviews .container .det span {
-  font-size: 18px;
+  font-size: 15px;
+  font-weight: lighter;
   color: black;
 }
 
@@ -651,9 +653,9 @@ html {
   width: 98%;
 }
 
-.faq #icon {
-  /* transition: 0.5s linear all; */
-}
+/* .faq #icon {
+  /* transition: 0.5s linear all; 
+} */
 
 .faq h4 > span:last-child {
   cursor: pointer;
