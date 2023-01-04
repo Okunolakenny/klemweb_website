@@ -42,7 +42,7 @@ footer hr {
     color: #fec33b;
     width: 85%;
     margin: auto;
-    margin-top: -60px;
+    margin-top: -40px;
     margin-bottom: 20px;
 }
 
@@ -50,8 +50,7 @@ footer .container>div {
     width: 350px;
     height: 200px;
     margin: auto;
-    /* margin-bottom: 20px; */
-    /* border: 1px solid white; */
+    
 }
 
 footer .container div:first-of-type {
@@ -121,7 +120,6 @@ footer .container>div:nth-of-type(3) a {
 }
 
 footer .container>div:nth-of-type(4) {
-    /* padding-top: 20px; */
     display: block;
     padding-left: 30px;
     width: 66%;
@@ -143,24 +141,39 @@ footer .container>div:nth-of-type(4) a {
 
 
 }
-
-footer .container>div:nth-of-type(5) {
-    /* float: right; */
+footer .container .apply_icons{
+    display: flex;
     margin: auto;
-
-
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    position: relative;
+    gap: 1rem;
+    
+}
+footer .container .apply_icons .icons {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 30px;
 }
 
-footer .container>div:nth-of-type(5) a {
+footer .container .apply_icons .icons a{
+    text-decoration: none;
+    font-size: 30px;
+    gap: 1rem;
+    color: #fec33b;
+}
+
+footer .container>div:nth-of-type(5) .apply{
     font-size: 20px;
     background-color: #4e8bff;
     border-radius: 5px;
     margin: auto;
-    margin-top: 40px;
     text-decoration: none;
     padding: 15px 15px;
     color: white;
-    margin-left: 100px;
     font-weight: bolder;
     float: left;
 
@@ -196,20 +209,7 @@ footer .copy p {
 
 }
 
-footer .icons {
-    display: flex;
-    margin: auto;
-    justify-content: flex-end;
-    gap: 2rem;
-}
 
-footer .icons a {
-    text-decoration: none;
-    font-size: 30px;
-    gap: 2rem;
-    color: #fec33b;
-
-}
 
 @media (max-width:1320px) {
 
@@ -301,21 +301,6 @@ footer .container>div{
         footer .container>div:nth-of-type(4) {
             text-align: center;
             width: 97%;
-            /* margin-bottom: -20px; */
         }
-        
-footer .container>div:nth-of-type(5) a {
-    font-size: 20px;
-    background-color: #4e8bff;
-    border-radius: 5px;
-    margin-top: 20px;
-    text-decoration: none;
-    padding: 15px 20px;
-    color: white;
-    margin-left: 25%;
-    font-weight: bolder;
-    float: left;
 
-
-}
     }
