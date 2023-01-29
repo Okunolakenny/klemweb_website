@@ -1,1213 +1,1213 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
-  margin: 0;
-  padding: 0;
-  font-family: "Raleway", sans-serif;
-  text-decoration: none;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Raleway", sans-serif;
+	text-decoration: none;
+	box-sizing: border-box;
 }
 
 body {
-  background: #f1f1e7;
+	background: #f1f1e7;
 }
 
 .topAbout {
-  width: 100%;
-  height: 400px;
-  margin-top: 6rem;
-  background-image: url(../Assets/images/about1.jpg);
+	width: 100%;
+	height: 400px;
+	margin-top: 6rem;
+	background-image: url(../Assets/images/about1.jpg);
 
-  background-size: cover;
-  background-position: top;
-  filter: brightness(50%);
-  background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top;
+	filter: brightness(50%);
+	background-repeat: no-repeat;
 }
 
 /* about us section */
 .about {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  transform: translateY(-200px);
-  margin-top: 50px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	transform: translateY(-200px);
+	margin-top: 50px;
 }
 .about .contents .text1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
-  width: 50%;
-  padding: 50px 30px 130px 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-end;
+	width: 50%;
+	padding: 50px 30px 130px 30px;
 }
 
 .about .contents .text li {
-  list-style-type: disc;
-  line-height: 2.2rem;
-  font-size: 1rem;
+	list-style-type: disc;
+	line-height: 2.2rem;
+	font-size: 1rem;
 }
 .about .contents .text1 li {
-  list-style-type: disc;
-  line-height: 1.8rem;
-  font-size: 1rem;
-  text-align: right;
+	list-style-type: disc;
+	line-height: 1.8rem;
+	font-size: 1rem;
+	text-align: right;
 }
 
 .contents {
-  border-radius: 25px;
-  overflow: hidden;
-  width: 80%;
-  height: fit-content;
-  background-color: #d6e1ff;
-  margin: auto;
-  display: flex;
-  position: relative;
-  justify-content: space-between;
-  /* align-items: center; */
+	border-radius: 25px;
+	overflow: hidden;
+	width: 80%;
+	height: fit-content;
+	background-color: #d6e1ff;
+	margin: auto;
+	display: flex;
+	position: relative;
+	justify-content: space-between;
+	/* align-items: center; */
 }
 .contents .text {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  margin: auto;
-  padding: 20px 30px 20px 30px;
-  position: relative;
-  align-items: flex-start;
-  justify-content: flex-start;
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	margin: auto;
+	padding: 20px 30px 20px 30px;
+	position: relative;
+	align-items: flex-start;
+	justify-content: flex-start;
 }
 
 .contents .text h3,
 .about .contents .text1 h3 {
-  margin-bottom: 15px;
-  line-height: 1.5rem;
+	margin-bottom: 15px;
+	line-height: 1.5rem;
 }
 .contents .text p {
-  line-height: 1.8rem;
-  font-size: 1rem;
-  margin-bottom: 15px;
+	line-height: 1.8rem;
+	font-size: 1rem;
+	margin-bottom: 15px;
 }
 .contents .text img {
-  height: 150px;
-  align-self: flex-start;
+	height: 150px;
+	align-self: flex-start;
 }
 
 .contents .image {
-  width: 50%;
-  position: relative;
-  margin: auto;
-  overflow: hidden;
-  height: 100%;
+	width: 50%;
+	position: relative;
+	margin: auto;
+	overflow: hidden;
+	height: 100%;
 }
-.contents .image img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
+x .contents .image img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
 }
 
 @media screen and (max-width: 1000px) {
-  .contents {
-    width: 90%;
-  }
+	.contents {
+		width: 90%;
+	}
 }
 
 @media screen and (max-width: 800px) {
-  .contents {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-  }
-  .vision {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  .contents .text,
-  .about .contents .text1 {
-    width: 100%;
-    padding: 20px 30px 50px 30px;
-  }
+	.contents {
+		width: 80%;
+		display: flex;
+		flex-direction: column;
+	}
+	.vision {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	.contents .text,
+	.about .contents .text1 {
+		width: 100%;
+		padding: 20px 30px 50px 30px;
+	}
 
-  .contents .image {
-    width: 100%;
-    height: 400px;
-  }
+	.contents .image {
+		width: 100%;
+		height: 400px;
+	}
 }
 
 @media screen and (max-width: 500px) {
-  .contents {
-    width: 85%;
-  }
-  .contents .image {
-    height: 300px;
-  }
+	.contents {
+		width: 85%;
+	}
+	.contents .image {
+		height: 300px;
+	}
 }
 
 /* board section */
 .board {
-  width: 100%;
-  position: relative;
-  align-items: center;
-  transform: translateY(-150px);
+	width: 100%;
+	position: relative;
+	align-items: center;
+	transform: translateY(-150px);
 }
 
 .board > h1 {
-  color: #042453;
-  font-size: 2.5rem;
-  text-align: center;
-  width: 100%;
-  padding-top: 2rem;
-  margin-bottom: 100px;
+	color: #042453;
+	font-size: 2.5rem;
+	text-align: center;
+	width: 100%;
+	padding-top: 2rem;
+	margin-bottom: 100px;
 }
 
 .thelead {
-  width: 80%;
-  display: flex;
-  position: relative;
-  margin: 1rem auto;
+	width: 80%;
+	display: flex;
+	position: relative;
+	margin: 1rem auto;
 }
 
 .leadImg {
-  background-image: url(../Assets/images/founder1.jpg);
-  width: 40%;
-  height: 500px;
-  display: flex;
-  z-index: 1;
-  align-items: flex-end;
-  background-repeat: no-repeat;
-  position: relative;
-  background-size: cover;
-  background-position: left;
-  border-radius: 25px 0 25px 0;
-  /* background-color: #b3afa4; */
+	background-image: url(../Assets/images/founder1.jpg);
+	width: 40%;
+	height: 500px;
+	display: flex;
+	z-index: 1;
+	align-items: flex-end;
+	background-repeat: no-repeat;
+	position: relative;
+	background-size: cover;
+	background-position: left;
+	border-radius: 25px 0 25px 0;
+	/* background-color: #b3afa4; */
 }
 
 .teamleadText {
-  width: 60%;
-  padding: 5rem 2rem;
-  line-height: 1.6rem;
-  display: flex;
-  margin: auto;
-  flex-direction: column;
-  gap: 2rem;
+	width: 60%;
+	padding: 5rem 2rem;
+	line-height: 1.6rem;
+	display: flex;
+	margin: auto;
+	flex-direction: column;
+	gap: 2rem;
 }
 
 .teamleadText h2 {
-  color: #042453;
-  font-size: 1.8rem;
+	color: #042453;
+	font-size: 1.8rem;
 }
 
 .teamleadName {
-  color: #72b3f2;
-  font-weight: bold;
-  font-size: 1.6rem;
+	color: #72b3f2;
+	font-weight: bold;
+	font-size: 1.6rem;
 }
 
 .teamleadOverlay {
-  transition: 4s ease-in !important;
-  position: relative;
-  top: 0;
-  width: 100%;
-  height: 20%;
-  visibility: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #042453ba;
-  border-radius: 0 0 20px 0;
+	transition: 4s ease-in !important;
+	position: relative;
+	top: 0;
+	width: 100%;
+	height: 20%;
+	visibility: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #042453ba;
+	border-radius: 0 0 20px 0;
 }
 .socials {
-  font-size: 2rem;
-  color: #fec33b;
-  border: 1px solid #ffffff;
-  width: 70%;
-  height: 50%;
-  border-radius: 10px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  position: relative;
+	font-size: 2rem;
+	color: #fec33b;
+	border: 1px solid #ffffff;
+	width: 70%;
+	height: 50%;
+	border-radius: 10px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	position: relative;
 }
 
 .fa-whatsapp,
 .fa-facebook,
 .fa-twitter,
 .fa-linkedin {
-  color: #fec33b;
-  cursor: pointer;
+	color: #fec33b;
+	cursor: pointer;
 }
 
 .leadImg:hover .teamleadOverlay {
-  position: relative;
-  top: 0;
-  width: 100%;
-  height: 20%;
-  visibility: visible;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #042453ba;
-  border-radius: 0 0 20px 0;
+	position: relative;
+	top: 0;
+	width: 100%;
+	height: 20%;
+	visibility: visible;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #042453ba;
+	border-radius: 0 0 20px 0;
 }
 
 @media screen and (max-width: 900px) {
-  .thelead {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    margin: 1rem auto;
-  }
+	.thelead {
+		width: 80%;
+		display: flex;
+		flex-direction: column;
+		margin: 1rem auto;
+	}
 
-  .leadImg {
-    width: 90%;
-    height: 400px;
-    display: flex;
-    margin: auto;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 25px 0 25px 0;
-    background-color: rgb(174, 156, 156);
-  }
+	.leadImg {
+		width: 90%;
+		height: 400px;
+		display: flex;
+		margin: auto;
+		background-repeat: no-repeat;
+		background-size: cover;
+		border-radius: 25px 0 25px 0;
+		background-color: rgb(174, 156, 156);
+	}
 
-  .teamleadText {
-    width: 90%;
-    margin: auto;
-    padding: 5rem 2rem;
-    line-height: 1.6rem;
-    font-size: 1.2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
+	.teamleadText {
+		width: 90%;
+		margin: auto;
+		padding: 5rem 2rem;
+		line-height: 1.6rem;
+		font-size: 1.2rem;
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
 
-  .teamleadText h2 {
-    color: #042453;
-    font-size: 1.8rem;
-  }
+	.teamleadText h2 {
+		color: #042453;
+		font-size: 1.8rem;
+	}
 
-  .teamleadName {
-    color: #72b3f2;
-    font-weight: bold;
-    font-size: 1.6rem;
-  }
+	.teamleadName {
+		color: #72b3f2;
+		font-weight: bold;
+		font-size: 1.6rem;
+	}
 
-  .teamleadOverlay {
-    transition: 4s ease-in !important;
-    position: relative;
-    top: 0;
-    width: 100%;
-    height: 20%;
-    visibility: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #042453ba;
-    border-radius: 0 0 20px 0;
-  }
-  .socials {
-    font-size: 2rem;
-    border: 1px solid #ffffff;
-    width: 70%;
-    height: 50%;
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-  }
+	.teamleadOverlay {
+		transition: 4s ease-in !important;
+		position: relative;
+		top: 0;
+		width: 100%;
+		height: 20%;
+		visibility: hidden;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: #042453ba;
+		border-radius: 0 0 20px 0;
+	}
+	.socials {
+		font-size: 2rem;
+		border: 1px solid #ffffff;
+		width: 70%;
+		height: 50%;
+		border-radius: 10px;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+	}
 
-  .leadImg:hover .teamleadOverlay {
-    position: relative;
-    top: 0;
-    width: 100%;
-    height: 20%;
-    visibility: visible;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #042453ba;
-    border-radius: 0 0 20px 0;
-  }
+	.leadImg:hover .teamleadOverlay {
+		position: relative;
+		top: 0;
+		width: 100%;
+		height: 20%;
+		visibility: visible;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: #042453ba;
+		border-radius: 0 0 20px 0;
+	}
 }
 
 @media screen and (max-width: 600px) {
-  .leadImg {
-    width: 97%;
-  }
+	.leadImg {
+		width: 97%;
+	}
 
-  .teamleadText {
-    width: 100%;
-    padding: 1rem 0;
-  }
+	.teamleadText {
+		width: 100%;
+		padding: 1rem 0;
+	}
 }
 
 @media screen and (max-width: 500px) {
-  .leadImg {
-    height: 350px;
-  }
+	.leadImg {
+		height: 350px;
+	}
 
-  .teamleadText {
-    width: 100%;
-    padding: 1rem 0;
-  }
+	.teamleadText {
+		width: 100%;
+		padding: 1rem 0;
+	}
 }
 
 @media screen and (max-width: 350px) {
-  .leadImg {
-    height: 300px;
-  }
+	.leadImg {
+		height: 300px;
+	}
 
-  .teamleadText {
-    width: 100%;
-    padding: 1rem 0;
-  }
+	.teamleadText {
+		width: 100%;
+		padding: 1rem 0;
+	}
 }
 
 /* Azeem styling */
 
 .teamlead {
-  width: 80%;
-  display: flex;
-  position: relative;
-  margin: 1rem auto;
+	width: 80%;
+	display: flex;
+	position: relative;
+	margin: 1rem auto;
 }
 
 .teamleadImg {
-  background-image: url(../Assets/images/webshakers.jpg);
-  width: 38%;
-  height: 500px;
-  display: flex;
-  z-index: 1;
-  align-items: flex-end;
-  background-repeat: no-repeat;
-  position: relative;
-  background-size: 100% 100%;
-  border-radius: 25px 0 25px 0;
-  background-color: rgb(174, 156, 156);
+	background-image: url(../Assets/images/webshakers.jpg);
+	width: 38%;
+	height: 500px;
+	display: flex;
+	z-index: 1;
+	align-items: flex-end;
+	background-repeat: no-repeat;
+	position: relative;
+	background-size: 100% 100%;
+	border-radius: 25px 0 25px 0;
+	background-color: rgb(174, 156, 156);
 }
 
 .teamleadText {
-  width: 60%;
-  padding: 5rem 2rem;
-  line-height: 1.6rem;
-  display: flex;
-  margin: auto;
-  flex-direction: column;
-  gap: 2rem;
+	width: 60%;
+	padding: 5rem 2rem;
+	line-height: 1.6rem;
+	display: flex;
+	margin: auto;
+	flex-direction: column;
+	gap: 2rem;
 }
 
 .teamleadText h2 {
-  color: #042453;
-  font-size: 1.8rem;
+	color: #042453;
+	font-size: 1.8rem;
 }
 
 .teamleadName {
-  color: #72b3f2;
-  font-weight: bold;
-  font-size: 1.6rem;
+	color: #72b3f2;
+	font-weight: bold;
+	font-size: 1.6rem;
 }
 
 .teamleadOverlay {
-  transition: 4s ease-in !important;
-  position: relative;
-  top: 0;
-  width: 100%;
-  height: 20%;
-  visibility: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #042453ba;
-  border-radius: 0 0 20px 0;
+	transition: 4s ease-in !important;
+	position: relative;
+	top: 0;
+	width: 100%;
+	height: 20%;
+	visibility: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #042453ba;
+	border-radius: 0 0 20px 0;
 }
 .socials {
-  font-size: 2rem;
-  color: #fec33b;
-  border: 1px solid #ffffff;
-  width: 70%;
-  height: 50%;
-  border-radius: 10px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  position: relative;
+	font-size: 2rem;
+	color: #fec33b;
+	border: 1px solid #ffffff;
+	width: 70%;
+	height: 50%;
+	border-radius: 10px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	position: relative;
 }
 
 .fa-whatsapp,
 .fa-facebook,
 .fa-twitter,
 .fa-linkedin {
-  color: #fec33b;
-  cursor: pointer;
+	color: #fec33b;
+	cursor: pointer;
 }
 
 .teamleadImg:hover .teamleadOverlay {
-  position: relative;
-  top: 0;
-  width: 100%;
-  height: 20%;
-  visibility: visible;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #042453ba;
-  border-radius: 0 0 20px 0;
+	position: relative;
+	top: 0;
+	width: 100%;
+	height: 20%;
+	visibility: visible;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #042453ba;
+	border-radius: 0 0 20px 0;
 }
 
 @media screen and (max-width: 900px) {
-  .teamlead {
-    width: 80%;
-    display: flex;
-    flex-direction: column-reverse;
-    margin: 1rem auto;
-  }
+	.teamlead {
+		width: 80%;
+		display: flex;
+		flex-direction: column-reverse;
+		margin: 1rem auto;
+	}
 
-  .teamleadImg {
-    width: 90%;
-    height: 400px;
-    display: flex;
-    margin: auto;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 25px 0 25px 0;
-    background-color: rgb(174, 156, 156);
-  }
+	.teamleadImg {
+		width: 90%;
+		height: 400px;
+		display: flex;
+		margin: auto;
+		background-repeat: no-repeat;
+		background-size: cover;
+		border-radius: 25px 0 25px 0;
+		background-color: rgb(174, 156, 156);
+	}
 
-  .teamleadText {
-    width: 90%;
-    margin: auto;
-    padding: 5rem 2rem;
-    line-height: 1.6rem;
-    font-size: 1.2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
+	.teamleadText {
+		width: 90%;
+		margin: auto;
+		padding: 5rem 2rem;
+		line-height: 1.6rem;
+		font-size: 1.2rem;
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
 
-  .teamleadText h2 {
-    color: #042453;
-    font-size: 1.8rem;
-  }
+	.teamleadText h2 {
+		color: #042453;
+		font-size: 1.8rem;
+	}
 
-  .teamleadName {
-    color: #72b3f2;
-    font-weight: bold;
-    font-size: 1.6rem;
-  }
+	.teamleadName {
+		color: #72b3f2;
+		font-weight: bold;
+		font-size: 1.6rem;
+	}
 
-  .teamleadOverlay {
-    transition: 4s ease-in !important;
-    position: relative;
-    top: 0;
-    width: 100%;
-    height: 20%;
-    visibility: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #042453ba;
-    border-radius: 0 0 20px 0;
-  }
-  .socials {
-    font-size: 2rem;
-    border: 1px solid #ffffff;
-    width: 70%;
-    height: 50%;
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-  }
+	.teamleadOverlay {
+		transition: 4s ease-in !important;
+		position: relative;
+		top: 0;
+		width: 100%;
+		height: 20%;
+		visibility: hidden;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: #042453ba;
+		border-radius: 0 0 20px 0;
+	}
+	.socials {
+		font-size: 2rem;
+		border: 1px solid #ffffff;
+		width: 70%;
+		height: 50%;
+		border-radius: 10px;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+	}
 
-  .teamleadImg:hover .teamleadOverlay {
-    position: relative;
-    top: 0;
-    width: 100%;
-    height: 20%;
-    visibility: visible;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #042453ba;
-    border-radius: 0 0 20px 0;
-  }
+	.teamleadImg:hover .teamleadOverlay {
+		position: relative;
+		top: 0;
+		width: 100%;
+		height: 20%;
+		visibility: visible;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: #042453ba;
+		border-radius: 0 0 20px 0;
+	}
 }
 
 @media screen and (max-width: 600px) {
-  .teamleadImg {
-    width: 97%;
-  }
+	.teamleadImg {
+		width: 97%;
+	}
 
-  .teamleadText {
-    width: 100%;
-    padding: 1rem 0;
-  }
+	.teamleadText {
+		width: 100%;
+		padding: 1rem 0;
+	}
 }
 
 @media screen and (max-width: 500px) {
-  .teamleadImg {
-    height: 350px;
-  }
+	.teamleadImg {
+		height: 350px;
+	}
 
-  .teamleadText {
-    width: 100%;
-    padding: 1rem 0;
-  }
+	.teamleadText {
+		width: 100%;
+		padding: 1rem 0;
+	}
 }
 
 @media screen and (max-width: 350px) {
-  .teamleadImg {
-    height: 300px;
-  }
+	.teamleadImg {
+		height: 300px;
+	}
 
-  .teamleadText {
-    width: 100%;
-    padding: 1rem 0;
-  }
+	.teamleadText {
+		width: 100%;
+		padding: 1rem 0;
+	}
 }
 
 /* Kenny Styling*/
 
 .kenny {
-  width: 80%;
-  display: flex;
-  position: relative;
-  margin: 1rem auto;
+	width: 80%;
+	display: flex;
+	position: relative;
+	margin: 1rem auto;
 }
 
 .kennyImg {
-  background-image: url(../Assets/images/kehinde.jpg);
-  width: 38%;
-  height: 500px;
-  display: flex;
-  z-index: 1;
-  align-items: flex-end;
-  background-repeat: no-repeat;
-  position: relative;
-  background-size: 100% 100%;
-  border-radius: 25px 0 25px 0;
-  background-color: rgb(174, 156, 156);
+	background-image: url(../Assets/images/kehinde.jpg);
+	width: 38%;
+	height: 500px;
+	display: flex;
+	z-index: 1;
+	align-items: flex-end;
+	background-repeat: no-repeat;
+	position: relative;
+	background-size: 100% 100%;
+	border-radius: 25px 0 25px 0;
+	background-color: rgb(174, 156, 156);
 }
 
 .teamleadText {
-  width: 60%;
-  padding: 5rem 2rem;
-  line-height: 1.6rem;
-  display: flex;
-  margin: auto;
-  flex-direction: column;
-  gap: 2rem;
+	width: 60%;
+	padding: 5rem 2rem;
+	line-height: 1.6rem;
+	display: flex;
+	margin: auto;
+	flex-direction: column;
+	gap: 2rem;
 }
 
 .teamleadText h2 {
-  color: #042453;
-  font-size: 1.8rem;
+	color: #042453;
+	font-size: 1.8rem;
 }
 
 .teamleadName {
-  color: #72b3f2;
-  font-weight: bold;
-  font-size: 1.6rem;
+	color: #72b3f2;
+	font-weight: bold;
+	font-size: 1.6rem;
 }
 
 .teamleadOverlay {
-  transition: 4s ease-in !important;
-  position: relative;
-  top: 0;
-  width: 100%;
-  height: 20%;
-  visibility: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #042453ba;
-  border-radius: 0 0 20px 0;
+	transition: 4s ease-in !important;
+	position: relative;
+	top: 0;
+	width: 100%;
+	height: 20%;
+	visibility: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #042453ba;
+	border-radius: 0 0 20px 0;
 }
 .socials {
-  font-size: 2rem;
-  color: #fec33b;
-  border: 1px solid #ffffff;
-  width: 70%;
-  height: 50%;
-  border-radius: 10px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  position: relative;
+	font-size: 2rem;
+	color: #fec33b;
+	border: 1px solid #ffffff;
+	width: 70%;
+	height: 50%;
+	border-radius: 10px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	position: relative;
 }
 
 .fa-whatsapp,
 .fa-facebook,
 .fa-twitter,
 .fa-linkedin {
-  color: #fec33b;
-  cursor: pointer;
+	color: #fec33b;
+	cursor: pointer;
 }
 
 .kennyImg:hover .teamleadOverlay {
-  position: relative;
-  top: 0;
-  width: 100%;
-  height: 20%;
-  visibility: visible;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #042453ba;
-  border-radius: 0 0 20px 0;
+	position: relative;
+	top: 0;
+	width: 100%;
+	height: 20%;
+	visibility: visible;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #042453ba;
+	border-radius: 0 0 20px 0;
 }
 
 @media screen and (max-width: 900px) {
-  .kenny {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    margin: 1rem auto;
-  }
+	.kenny {
+		width: 80%;
+		display: flex;
+		flex-direction: column;
+		margin: 1rem auto;
+	}
 
-  .kennyImg {
-    width: 90%;
-    height: 400px;
-    display: flex;
-    margin: auto;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 25px 0 25px 0;
-    background-color: rgb(174, 156, 156);
-  }
+	.kennyImg {
+		width: 90%;
+		height: 400px;
+		display: flex;
+		margin: auto;
+		background-repeat: no-repeat;
+		background-size: cover;
+		border-radius: 25px 0 25px 0;
+		background-color: rgb(174, 156, 156);
+	}
 
-  .teamleadText {
-    width: 90%;
-    margin: auto;
-    padding: 5rem 2rem;
-    line-height: 1.6rem;
-    font-size: 1.2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
+	.teamleadText {
+		width: 90%;
+		margin: auto;
+		padding: 5rem 2rem;
+		line-height: 1.6rem;
+		font-size: 1.2rem;
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
 
-  .teamleadText h2 {
-    color: #042453;
-    font-size: 1.8rem;
-  }
+	.teamleadText h2 {
+		color: #042453;
+		font-size: 1.8rem;
+	}
 
-  .teamleadName {
-    color: #72b3f2;
-    font-weight: bold;
-    font-size: 1.6rem;
-  }
+	.teamleadName {
+		color: #72b3f2;
+		font-weight: bold;
+		font-size: 1.6rem;
+	}
 
-  .teamleadOverlay {
-    transition: 4s ease-in !important;
-    position: relative;
-    top: 0;
-    width: 100%;
-    height: 20%;
-    visibility: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #042453ba;
-    border-radius: 0 0 20px 0;
-  }
-  .socials {
-    font-size: 2rem;
-    border: 1px solid #ffffff;
-    width: 70%;
-    height: 50%;
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-  }
+	.teamleadOverlay {
+		transition: 4s ease-in !important;
+		position: relative;
+		top: 0;
+		width: 100%;
+		height: 20%;
+		visibility: hidden;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: #042453ba;
+		border-radius: 0 0 20px 0;
+	}
+	.socials {
+		font-size: 2rem;
+		border: 1px solid #ffffff;
+		width: 70%;
+		height: 50%;
+		border-radius: 10px;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+	}
 
-  .kennyImg:hover .teamleadOverlay {
-    position: relative;
-    top: 0;
-    width: 100%;
-    height: 20%;
-    visibility: visible;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #042453ba;
-    border-radius: 0 0 20px 0;
-  }
+	.kennyImg:hover .teamleadOverlay {
+		position: relative;
+		top: 0;
+		width: 100%;
+		height: 20%;
+		visibility: visible;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: #042453ba;
+		border-radius: 0 0 20px 0;
+	}
 }
 
 @media screen and (max-width: 600px) {
-  .kennyImg {
-    width: 97%;
-  }
+	.kennyImg {
+		width: 97%;
+	}
 
-  .teamleadText {
-    width: 100%;
-    padding: 1rem 0;
-  }
+	.teamleadText {
+		width: 100%;
+		padding: 1rem 0;
+	}
 }
 
 @media screen and (max-width: 500px) {
-  .kennyImg {
-    height: 350px;
-  }
+	.kennyImg {
+		height: 350px;
+	}
 
-  .teamleadText {
-    width: 100%;
-    padding: 1rem 0;
-  }
+	.teamleadText {
+		width: 100%;
+		padding: 1rem 0;
+	}
 }
 
 @media screen and (max-width: 350px) {
-  .kennyImg {
-    height: 300px;
-  }
+	.kennyImg {
+		height: 300px;
+	}
 
-  .teamleadText {
-    width: 100%;
-    padding: 1rem 0;
-  }
+	.teamleadText {
+		width: 100%;
+		padding: 1rem 0;
+	}
 }
 
 /* Victor Styling */
 
 .victor {
-  width: 80%;
-  display: flex;
-  position: relative;
-  margin: 1rem auto;
+	width: 80%;
+	display: flex;
+	position: relative;
+	margin: 1rem auto;
 }
 
 .victorImg {
-  background-image: url(../Assets/images/victor.jpg);
-  width: 38%;
-  height: 500px;
-  display: flex;
-  z-index: 1;
-  align-items: flex-end;
-  background-repeat: no-repeat;
-  position: relative;
-  background-size: 100% 100%;
-  border-radius: 25px 0 25px 0;
-  background-color: rgb(174, 156, 156);
+	background-image: url(../Assets/images/victor.jpg);
+	width: 38%;
+	height: 500px;
+	display: flex;
+	z-index: 1;
+	align-items: flex-end;
+	background-repeat: no-repeat;
+	position: relative;
+	background-size: 100% 100%;
+	border-radius: 25px 0 25px 0;
+	background-color: rgb(174, 156, 156);
 }
 
 .teamleadText {
-  width: 60%;
-  padding: 5rem 2rem;
-  line-height: 1.6rem;
-  display: flex;
-  margin: auto;
-  flex-direction: column;
-  gap: 2rem;
+	width: 60%;
+	padding: 5rem 2rem;
+	line-height: 1.6rem;
+	display: flex;
+	margin: auto;
+	flex-direction: column;
+	gap: 2rem;
 }
 
 .teamleadText h2 {
-  color: #042453;
-  font-size: 1.8rem;
+	color: #042453;
+	font-size: 1.8rem;
 }
 
 .teamleadName {
-  color: #72b3f2;
-  font-weight: bold;
-  font-size: 1.6rem;
+	color: #72b3f2;
+	font-weight: bold;
+	font-size: 1.6rem;
 }
 
 .teamleadOverlay {
-  transition: 4s ease-in !important;
-  position: relative;
-  top: 0;
-  width: 100%;
-  height: 20%;
-  visibility: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #042453ba;
-  border-radius: 0 0 20px 0;
+	transition: 4s ease-in !important;
+	position: relative;
+	top: 0;
+	width: 100%;
+	height: 20%;
+	visibility: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #042453ba;
+	border-radius: 0 0 20px 0;
 }
 
 .victorImg:hover .teamleadOverlay {
-  position: relative;
-  top: 0;
-  width: 100%;
-  height: 20%;
-  visibility: visible;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #042453ba;
-  border-radius: 0 0 20px 0;
+	position: relative;
+	top: 0;
+	width: 100%;
+	height: 20%;
+	visibility: visible;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #042453ba;
+	border-radius: 0 0 20px 0;
 }
 
 @media screen and (max-width: 900px) {
-  .victor {
-    width: 80%;
-    display: flex;
-    flex-direction: column-reverse;
-    margin: 1rem auto;
-  }
+	.victor {
+		width: 80%;
+		display: flex;
+		flex-direction: column-reverse;
+		margin: 1rem auto;
+	}
 
-  .victorImg {
-    width: 90%;
-    height: 400px;
-    display: flex;
-    margin: auto;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 25px 0 25px 0;
-    background-color: rgb(174, 156, 156);
-  }
+	.victorImg {
+		width: 90%;
+		height: 400px;
+		display: flex;
+		margin: auto;
+		background-repeat: no-repeat;
+		background-size: cover;
+		border-radius: 25px 0 25px 0;
+		background-color: rgb(174, 156, 156);
+	}
 
-  .teamleadText {
-    width: 90%;
-    margin: auto;
-    padding: 5rem 2rem;
-    line-height: 1.6rem;
-    font-size: 1.2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
+	.teamleadText {
+		width: 90%;
+		margin: auto;
+		padding: 5rem 2rem;
+		line-height: 1.6rem;
+		font-size: 1.2rem;
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
 
-  .teamleadText h2 {
-    color: #042453;
-    font-size: 1.8rem;
-  }
+	.teamleadText h2 {
+		color: #042453;
+		font-size: 1.8rem;
+	}
 
-  .teamleadName {
-    color: #72b3f2;
-    font-weight: bold;
-    font-size: 1.6rem;
-  }
+	.teamleadName {
+		color: #72b3f2;
+		font-weight: bold;
+		font-size: 1.6rem;
+	}
 
-  .teamleadOverlay {
-    transition: 4s ease-in !important;
-    position: relative;
-    top: 0;
-    width: 100%;
-    height: 20%;
-    visibility: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #042453ba;
-    border-radius: 0 0 20px 0;
-  }
+	.teamleadOverlay {
+		transition: 4s ease-in !important;
+		position: relative;
+		top: 0;
+		width: 100%;
+		height: 20%;
+		visibility: hidden;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: #042453ba;
+		border-radius: 0 0 20px 0;
+	}
 
-  .victorImg:hover .teamleadOverlay {
-    position: relative;
-    top: 0;
-    width: 100%;
-    height: 20%;
-    visibility: visible;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #042453ba;
-    border-radius: 0 0 20px 0;
-  }
+	.victorImg:hover .teamleadOverlay {
+		position: relative;
+		top: 0;
+		width: 100%;
+		height: 20%;
+		visibility: visible;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: #042453ba;
+		border-radius: 0 0 20px 0;
+	}
 }
 
 @media screen and (max-width: 600px) {
-  .victorImg {
-    width: 97%;
-  }
+	.victorImg {
+		width: 97%;
+	}
 
-  .teamleadText {
-    width: 100%;
-    padding: 1rem 0;
-  }
+	.teamleadText {
+		width: 100%;
+		padding: 1rem 0;
+	}
 }
 
 @media screen and (max-width: 500px) {
-  .victorImg {
-    height: 350px;
-  }
+	.victorImg {
+		height: 350px;
+	}
 
-  .teamleadText {
-    width: 100%;
-    padding: 1rem 0;
-  }
+	.teamleadText {
+		width: 100%;
+		padding: 1rem 0;
+	}
 }
 
 @media screen and (max-width: 350px) {
-  .victorImg {
-    height: 300px;
-  }
+	.victorImg {
+		height: 300px;
+	}
 
-  .teamleadText {
-    width: 100%;
-    padding: 1rem 0;
-  }
+	.teamleadText {
+		width: 100%;
+		padding: 1rem 0;
+	}
 }
 
 /* Taiwo Styling */
 
 .taiwo {
-  width: 80%;
-  display: flex;
-  position: relative;
-  margin: 1rem auto;
+	width: 80%;
+	display: flex;
+	position: relative;
+	margin: 1rem auto;
 }
 
 .taiwoImg {
-  background-image: url(../Assets/images/taiwo.jpg);
-  width: 38%;
-  height: 500px;
-  display: flex;
-  z-index: 1;
-  align-items: flex-end;
-  background-repeat: no-repeat;
-  position: relative;
-  background-size: 100% 100%;
-  border-radius: 25px 0 25px 0;
-  background-color: rgb(174, 156, 156);
+	background-image: url(../Assets/images/taiwo.jpg);
+	width: 38%;
+	height: 500px;
+	display: flex;
+	z-index: 1;
+	align-items: flex-end;
+	background-repeat: no-repeat;
+	position: relative;
+	background-size: 100% 100%;
+	border-radius: 25px 0 25px 0;
+	background-color: rgb(174, 156, 156);
 }
 
 .teamleadText {
-  width: 60%;
-  padding: 5rem 2rem;
-  line-height: 1.6rem;
-  display: flex;
-  margin: auto;
-  flex-direction: column;
-  gap: 2rem;
+	width: 60%;
+	padding: 5rem 2rem;
+	line-height: 1.6rem;
+	display: flex;
+	margin: auto;
+	flex-direction: column;
+	gap: 2rem;
 }
 
 .teamleadText h2 {
-  color: #042453;
-  font-size: 1.8rem;
+	color: #042453;
+	font-size: 1.8rem;
 }
 
 .teamleadName {
-  color: #72b3f2;
-  font-weight: bold;
-  font-size: 1.6rem;
+	color: #72b3f2;
+	font-weight: bold;
+	font-size: 1.6rem;
 }
 
 .teamleadOverlay {
-  transition: 4s ease-in !important;
-  position: relative;
-  top: 0;
-  width: 100%;
-  height: 20%;
-  visibility: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #042453ba;
-  border-radius: 0 0 20px 0;
+	transition: 4s ease-in !important;
+	position: relative;
+	top: 0;
+	width: 100%;
+	height: 20%;
+	visibility: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #042453ba;
+	border-radius: 0 0 20px 0;
 }
 .socials {
-  font-size: 2rem;
-  color: #fec33b;
-  border: 1px solid #ffffff;
-  width: 70%;
-  height: 50%;
-  border-radius: 10px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  position: relative;
+	font-size: 2rem;
+	color: #fec33b;
+	border: 1px solid #ffffff;
+	width: 70%;
+	height: 50%;
+	border-radius: 10px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	position: relative;
 }
 
 .fa-whatsapp,
 .fa-facebook,
 .fa-twitter,
 .fa-linkedin {
-  color: #fec33b;
-  cursor: pointer;
+	color: #fec33b;
+	cursor: pointer;
 }
 
 .taiwoImg:hover .teamleadOverlay {
-  position: relative;
-  top: 0;
-  width: 100%;
-  height: 20%;
-  visibility: visible;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #042453ba;
-  border-radius: 0 0 20px 0;
+	position: relative;
+	top: 0;
+	width: 100%;
+	height: 20%;
+	visibility: visible;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #042453ba;
+	border-radius: 0 0 20px 0;
 }
 
 @media screen and (max-width: 900px) {
-  .taiwo {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    margin: 1rem auto;
-  }
+	.taiwo {
+		width: 80%;
+		display: flex;
+		flex-direction: column;
+		margin: 1rem auto;
+	}
 
-  .taiwoImg {
-    width: 90%;
-    height: 400px;
-    display: flex;
-    margin: auto;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 25px 0 25px 0;
-    background-color: rgb(174, 156, 156);
-  }
+	.taiwoImg {
+		width: 90%;
+		height: 400px;
+		display: flex;
+		margin: auto;
+		background-repeat: no-repeat;
+		background-size: cover;
+		border-radius: 25px 0 25px 0;
+		background-color: rgb(174, 156, 156);
+	}
 
-  .teamleadText {
-    width: 90%;
-    margin: auto;
-    padding: 5rem 2rem;
-    line-height: 1.6rem;
-    font-size: 1.2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
+	.teamleadText {
+		width: 90%;
+		margin: auto;
+		padding: 5rem 2rem;
+		line-height: 1.6rem;
+		font-size: 1.2rem;
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
 
-  .teamleadText h2 {
-    color: #042453;
-    font-size: 1.8rem;
-  }
+	.teamleadText h2 {
+		color: #042453;
+		font-size: 1.8rem;
+	}
 
-  .teamleadName {
-    color: #72b3f2;
-    font-weight: bold;
-    font-size: 1.6rem;
-  }
+	.teamleadName {
+		color: #72b3f2;
+		font-weight: bold;
+		font-size: 1.6rem;
+	}
 
-  .teamleadOverlay {
-    transition: 4s ease-in !important;
-    position: relative;
-    top: 0;
-    width: 100%;
-    height: 20%;
-    visibility: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #042453ba;
-    border-radius: 0 0 20px 0;
-  }
-  .socials {
-    font-size: 2rem;
-    border: 1px solid #ffffff;
-    width: 70%;
-    height: 50%;
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-  }
+	.teamleadOverlay {
+		transition: 4s ease-in !important;
+		position: relative;
+		top: 0;
+		width: 100%;
+		height: 20%;
+		visibility: hidden;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: #042453ba;
+		border-radius: 0 0 20px 0;
+	}
+	.socials {
+		font-size: 2rem;
+		border: 1px solid #ffffff;
+		width: 70%;
+		height: 50%;
+		border-radius: 10px;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+	}
 
-  .taiwoImg:hover .teamleadOverlay {
-    position: relative;
-    top: 0;
-    width: 100%;
-    height: 20%;
-    visibility: visible;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #042453ba;
-    border-radius: 0 0 20px 0;
-  }
+	.taiwoImg:hover .teamleadOverlay {
+		position: relative;
+		top: 0;
+		width: 100%;
+		height: 20%;
+		visibility: visible;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: #042453ba;
+		border-radius: 0 0 20px 0;
+	}
 }
 
 @media screen and (max-width: 600px) {
-  .taiwoImg {
-    width: 97%;
-  }
+	.taiwoImg {
+		width: 97%;
+	}
 
-  .teamleadText {
-    width: 100%;
-    padding: 1rem 0;
-  }
+	.teamleadText {
+		width: 100%;
+		padding: 1rem 0;
+	}
 }
 
 @media screen and (max-width: 500px) {
-  .taiwoImg {
-    height: 350px;
-  }
+	.taiwoImg {
+		height: 350px;
+	}
 
-  .teamleadText {
-    width: 100%;
-    padding: 1rem 0;
-  }
+	.teamleadText {
+		width: 100%;
+		padding: 1rem 0;
+	}
 }
 
 @media screen and (max-width: 350px) {
-  .taiwoImg {
-    height: 300px;
-  }
+	.taiwoImg {
+		height: 300px;
+	}
 
-  .teamleadText {
-    width: 100%;
-    padding: 1rem 0;
-  }
+	.teamleadText {
+		width: 100%;
+		padding: 1rem 0;
+	}
 }
 
 /* students swiper */
 
 .studentsSwiper {
-  width: 100%;
-  height: 60vh;
-  /* border: 2px solid black; */
+	width: 100%;
+	height: 60vh;
+	/* border: 2px solid black; */
 }
 
 .studentsSwiper h2 {
-  color: #012b67;
-  font-size: 2rem;
-  text-align: center;
-  margin-bottom: 1rem;
-  /* padding: 10px; */
+	color: #012b67;
+	font-size: 2rem;
+	text-align: center;
+	margin-bottom: 1rem;
+	/* padding: 10px; */
 }
 
 .mainSwiper {
-  margin: auto;
-  width: 45%;
-  height: 100%;
-  /* background: #4e8bff; */
+	margin: auto;
+	width: 45%;
+	height: 100%;
+	/* background: #4e8bff; */
 }
 
 @media screen and (max-width: 900px) {
-  .mainSwiper {
-    margin: auto;
-    width: 90%;
-    height: 100%;
-    /* background: #4e8bff; */
-  }
+	.mainSwiper {
+		margin: auto;
+		width: 90%;
+		height: 100%;
+		/* background: #4e8bff; */
+	}
 }
 
 @media screen and (max-width: 768px) {
-  .mainSwiper {
-    margin: auto;
-    width: 70%;
-    height: 100%;
-    /* background: #4e8bff; */
-  }
+	.mainSwiper {
+		margin: auto;
+		width: 70%;
+		height: 100%;
+		/* background: #4e8bff; */
+	}
 }
 
 @media screen and (max-width: 600px) {
-  .mainSwiper {
-    margin: auto;
-    width: 90%;
-    height: 100%;
-    /* background: #4e8bff; */
-  }
+	.mainSwiper {
+		margin: auto;
+		width: 90%;
+		height: 100%;
+		/* background: #4e8bff; */
+	}
 }
 
 .swiper {
-  width: 100%;
-  height: 100%;
+	width: 100%;
+	height: 100%;
 }
 
 .swiper-pagination-bullet-active {
-  background-color: rgb(255, 255, 255) !important;
-  border: 2px solid #4e8bff;
+	background-color: rgb(255, 255, 255) !important;
+	border: 2px solid #4e8bff;
 }
 
 .swiper-button-prev {
-  color: #72b3f2 !important;
-  /* padding: -100px -100px ; */
+	color: #72b3f2 !important;
+	/* padding: -100px -100px ; */
 }
 
 .swiper-button-next {
-  color: #72b3f2 !important;
+	color: #72b3f2 !important;
 }
