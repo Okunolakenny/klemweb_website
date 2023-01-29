@@ -1,452 +1,462 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Raleway", sans-serif;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Raleway", sans-serif;
 }
 
 body {
-  overflow-x: hidden;
-  width: 100vw;
-  height: 100vh;
+	overflow-x: hidden;
+	width: 100vw;
+	height: 100vh;
 }
 
 .sec-one {
-  background: url("../Assets/images/bg_main.jpg");
-  width: 100%;
-  height: 450px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-top: 6rem;
+	background: url("../Assets/images/bg_main.jpg");
+	width: 100%;
+	height: 450px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-top: 6rem;
 }
 
 .sec-one .content {
-  background: #0080ff93;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1.5rem;
+	background: #0080ff93;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1.5rem;
 }
 
 .sec-one .content h1 {
-  color: white;
-  font-weight: bold;
-  font-size: 2.5rem;
+	color: white;
+	font-weight: bold;
+	font-size: 2.5rem;
 }
 
 .sec-one .content p {
-  width: 80%;
-  text-align: center;
-  color: white;
-  letter-spacing: 1px;
-  line-height: 1.5rem;
-  font-weight: 300;
-  font-size: 20px;
+	width: 80%;
+	text-align: center;
+	color: white;
+	letter-spacing: 1px;
+	line-height: 1.5rem;
+	font-weight: 300;
+	font-size: 20px;
 }
 
 .sec-two {
-  position: relative;
-  width: 90%;
-  top: -80px;
-  border-radius: 3rem;
-  margin: auto;
-  display: flex;
-  flex-direction: column-reverse;
-  /* justify-content: center;
+	position: relative;
+	width: 90%;
+	top: -80px;
+	border-radius: 3rem;
+	margin: auto;
+	display: flex;
+	flex-direction: column-reverse;
+	/* justify-content: center;
     align-items: center; */
 }
 
 .sec-two .map-container {
-  width: 100%;
+	width: 100%;
 }
 
 .sec-two .map-container iframe {
-  width: 100%;
-  border-radius: 0 0 3rem 3rem;
-  height: 300px;
+	width: 100%;
+	border-radius: 0 0 3rem 3rem;
+	height: 300px;
 }
 
 .form-container {
-  width: 100%;
-  border-radius: 3rem 3rem 0 0;
-  padding: 1.2rem;
-  background: #d2d2d2;
-  display: flex;
-  flex-direction: column;
+	width: 100%;
+	border-radius: 3rem 3rem 0 0;
+	padding: 1.2rem;
+	background: #d2d2d2;
+	display: flex;
+	flex-direction: column;
 }
 
 .form-container .heading {
-  font-size: 1.2rem;
-  font-weight: 700;
-  margin: auto;
-  color: #0a2a66;
+	font-size: 1.2rem;
+	font-weight: 700;
+	margin: auto;
+	color: #0a2a66;
 }
 
 .form-container .details {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding: 1rem 2rem;
-  justify-content: space-between;
-  gap: 0.8rem;
-  /* margin: auto; */
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding: 1rem 2rem;
+	justify-content: space-between;
+	gap: 0.8rem;
+	/* margin: auto; */
 }
 
 .form-container .details h2 {
-  font-size: 1rem;
-  align-self: center;
+	font-size: 1rem;
+	align-self: center;
 }
 
 .details .each-detail {
-  display: flex;
-  flex-direction: row;
-  gap: 0.5rem;
-  align-self: center;
-  font-weight: 200;
-  width: 290px;
-  align-items: flex-start;
-  justify-content: left;
+	display: flex;
+	flex-direction: row;
+	gap: 0.5rem;
+	align-self: center;
+	font-weight: 200;
+	width: 290px;
+	align-items: flex-start;
+	justify-content: left;
 }
 
 .details .each-detail .text {
-  width: 240px;
+	width: 240px;
 }
 
 .ico {
-  color: #0080ff93;
+	color: #0080ff93;
 }
 
 .form-container form {
-  display: flex;
-  flex-direction: column;
-  height: 300px;
-  justify-content: space-between;
+	display: flex;
+	flex-direction: column;
+	height: 300px;
+	justify-content: space-between;
 }
 
 .form-container form input,
 textarea {
-  height: 2.5rem;
-  padding: 0.2rem 0.7rem;
-  border-radius: 0.5rem;
-  border: none;
-  /* background: #dceeff; */
-  color: #0a2a66;
+	height: 3rem;
+	width: 100% !important;
+	padding: 0.2rem 0.7rem;
+	border-radius: 0.5rem;
+	border: none;
+	font-size: 1.2rem;
+	color: #0a2a66;
+	box-shadow: 0 0 0 0.2rem #0a2a6622;
 }
 
 .form-container form input,
 textarea:focus {
-  outline: none;
+	outline: none;
 }
 
-.form-container form input[type="submit"] {
-  width: 70px;
-  color: white;
-  background: #0a2a66;
-  cursor: pointer;
+.form-container form button {
+	padding: 1rem 2rem;
+	border: none;
+	font-size: 1.1rem;
+	width: max-content;
+	border-radius: 0.5rem;
+	color: white;
+	background: #0a2a66;
+	cursor: pointer;
+	transition: 0.5s linear all;
+}
+.form-container form button:hover {
+	background: #0a2a6689;
 }
 
 .form-container form textarea {
-  width: 100%;
-  height: 7rem;
-  resize: none;
+	width: 100%;
+	height: 7rem;
+	resize: none;
 }
 
 .sec-three {
-  width: 90%;
-  display: flex;
-  margin: 7rem auto 0;
-  gap: 1rem;
-  flex-direction: row;
-  /* height: 550px; */
-  overflow: hidden;
-  border-radius: 0.5rem;
+	width: 90%;
+	display: flex;
+	margin: 7rem auto 0;
+	gap: 1rem;
+	flex-direction: row;
+	/* height: 550px; */
+	overflow: hidden;
+	border-radius: 0.5rem;
 }
 .div-form {
-  width: 50%;
-  display: flex;
-  gap: 1rem;
-  overflow: auto;
-  flex-direction: column;
+	width: 50%;
+	display: flex;
+	gap: 1rem;
+	overflow: auto;
+	flex-direction: column;
 }
 .sec-three .image {
-  width: 50%;
-  overflow: hidden;
+	width: 50%;
+	overflow: hidden;
 }
 .sec-three .image img {
-  object-fit: 100%;
-  height: 100%;
+	object-fit: 100%;
+	height: 100%;
 }
 .head {
-  text-align: center;
-  color: #0a2a66;
-  font-size: 1.5rem;
+	text-align: center;
+	color: #0a2a66;
+	font-size: 1.5rem;
 }
 
 .tag {
-  text-align: center;
-  width: 100%;
-  margin: auto;
+	text-align: center;
+	width: 100%;
+	margin: auto;
 }
 
 .sec-three form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
 }
 
 .sec-three .form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  margin: auto;
-  width: 100%;
-  padding: 0 1rem;
-  align-items: center;
-  justify-content: center;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	margin: auto;
+	width: 100%;
+	padding: 0 1rem;
+	align-items: center;
+	justify-content: center;
 }
 .sec-three .form .input {
-  height: 3rem;
-  width: 100% !important;
-  padding: 0.2rem 0.7rem;
-  border-radius: 0.5rem;
-  border: none;
-  /* background: #dceeff; */
-  font-size: 1.2rem;
-  color: #0a2a66;
-  box-shadow: 0 0 0 0.2rem #0a2a6622;
+	height: 3rem;
+	width: 100% !important;
+	padding: 0.2rem 0.7rem;
+	border-radius: 0.5rem;
+	border: none;
+	/* background: #dceeff; */
+	font-size: 1.2rem;
+	color: #0a2a66;
+	box-shadow: 0 0 0 0.2rem #0a2a6622;
 }
 
 .sec-three .form .input:focus {
-  outline: none;
+	outline: none;
 }
 
 .sec-three .form .radios {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  /* justify-content: space-between; */
-  align-items: flex-start;
-  width: 100% !important;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	/* justify-content: space-between; */
+	align-items: flex-start;
+	width: 100% !important;
 }
 
 .sec-three .form .radios div {
-  display: flex;
-  align-items: center;
-  width: fit-content;
-  gap: 1rem;
+	display: flex;
+	align-items: center;
+	width: fit-content;
+	gap: 1rem;
 }
 .sec-three .form .radios div .checkbox {
-  accent-color: green;
+	accent-color: green;
 }
 
 .sec-three .form .radios input {
-  width: 20px;
+	width: 20px;
 }
 
 .sec-three .form textarea {
-  width: 100% !important;
-  height: 7rem;
-  resize: none;
-  font-size: 1.2rem;
-  box-shadow: 0 0 0 0.2rem #0a2a6622;
-  align-self: left;
+	width: 100% !important;
+	height: 7rem;
+	resize: none;
+	font-size: 1.2rem;
+	box-shadow: 0 0 0 0.2rem #0a2a6622;
+	align-self: left;
 }
 
 .sec-three form input[type="submit"] {
-  color: white;
-  background: #0a2a66;
-  border-radius: 0.4rem;
-  border: none;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 1.2rem;
-  padding: 0.5rem;
-  width: 130px;
-  text-align: center;
+	color: white;
+	background: #0a2a66;
+	border-radius: 0.4rem;
+	border: none;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 1.2rem;
+	padding: 0.5rem;
+	width: 130px;
+	text-align: center;
 }
 
 .sec-four {
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  margin: 9rem auto 0;
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	margin: 9rem auto 0;
 }
 
 .sec-four form {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  margin: auto;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	margin: auto;
 }
 
 .sec-four form input {
-  height: 3rem;
-  width: 100%;
-  padding: 0.2rem 0.7rem;
-  border-radius: 0.5rem;
-  border: none;
-  /* background: #dceeff; */
-  font-size: 1.2rem;
-  box-shadow: 0 0 0 0.2rem #0a2a6622;
-  color: #0a2a66;
+	height: 3rem;
+	width: 100%;
+	padding: 0.2rem 0.7rem;
+	border-radius: 0.5rem;
+	border: none;
+	/* background: #dceeff; */
+	font-size: 1.2rem;
+	box-shadow: 0 0 0 0.2rem #0a2a6622;
+	color: #0a2a66;
 }
 
 .sec-four form input:focus {
-  outline: none;
+	outline: none;
 }
 
 .sec-four form textarea {
-  width: 100%;
-  height: 7rem;
-  resize: vertical;
-  font-size: 1.2rem;
-  box-shadow: 0 0 0 0.2rem #0a2a6622;
+	width: 100%;
+	height: 7rem;
+	resize: vertical;
+	font-size: 1.2rem;
+	box-shadow: 0 0 0 0.2rem #0a2a6622;
 }
 
 .sec-four form textarea:focus {
-  outline: none;
+	outline: none;
 }
 
 .sec-four form input[type="submit"] {
-  width: 100%;
-  color: white;
-  background: #0a2a66;
-  border-radius: 0.4rem;
-  border: none;
-  cursor: pointer;
-  margin: auto;
-  padding: 0.5rem;
-  font-weight: bold;
-  text-align: center;
+	width: 100%;
+	color: white;
+	background: #0a2a66;
+	border-radius: 0.4rem;
+	border: none;
+	cursor: pointer;
+	margin: auto;
+	padding: 0.5rem;
+	font-weight: bold;
+	text-align: center;
 }
 
 @media screen and (min-width: 767px) and (max-width: 991px) {
-  .form-container form input {
-    width: 70%;
-    margin: auto;
-  }
+	.form-container form input {
+		width: 70%;
+		margin: auto;
+	}
 
-  .form-container form textarea {
-    width: 75%;
-    margin: auto;
-  }
+	.form-container form textarea {
+		width: 75%;
+		margin: auto;
+	}
 
-  .sec-two {
-    width: 70%;
-  }
+	.sec-two {
+		width: 70%;
+	}
 
-  .sec-three {
-    width: 70%;
-  }
+	.sec-three {
+		width: 70%;
+	}
 
-  .sec-four {
-    width: 70%;
-  }
+	.sec-four {
+		width: 70%;
+	}
 }
 @media screen and (max-width: 767px) {
-  .sec-three {
-    flex-direction: column-reverse;
-    height: fit-content;
-  }
-  .sec-three .image {
-    width: 100%;
-  }
-  .sec-three .div-form {
-    width: 100%;
-  }
-  .sec-three .image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+	.sec-three {
+		flex-direction: column-reverse;
+		height: fit-content;
+	}
+	.sec-three .image {
+		width: 100%;
+	}
+	.sec-three .div-form {
+		width: 100%;
+	}
+	.sec-three .image img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
 }
 @media screen and (min-width: 991px) {
-  .sec-one .content p {
-    width: 35%;
-  }
+	.sec-one .content p {
+		width: 35%;
+	}
 
-  .sec-two .map-container iframe {
-    border-radius: 0 3rem 3rem 0;
-    height: 100%;
-  }
+	.sec-two .map-container iframe {
+		border-radius: 0 3rem 3rem 0;
+		height: 100%;
+	}
 
-  .sec-two .map-container {
-    width: 50%;
-  }
+	.sec-two .map-container {
+		width: 50%;
+	}
 
-  .sec-two {
-    flex-direction: row-reverse;
-    width: 85%;
-  }
+	.sec-two {
+		flex-direction: row-reverse;
+		width: 85%;
+	}
 
-  .form-container {
-    width: 50%;
-    border-radius: 3rem 0 0 3rem;
-    padding: 3.5rem 2.2rem;
-  }
+	.form-container {
+		width: 50%;
+		border-radius: 3rem 0 0 3rem;
+		padding: 3.5rem 2.2rem;
+	}
 
-  .form-container .heading {
-    margin: 0;
-  }
+	.form-container .heading {
+		margin: 0;
+	}
 
-  .form-container .details {
-    width: 65%;
-  }
+	.form-container .details {
+		width: 65%;
+	}
 
-  .form-container .details h2 {
-    align-self: start;
-  }
+	.form-container .details h2 {
+		align-self: start;
+	}
 
-  .form-container form input {
-    width: 60%;
-  }
+	.form-container form input {
+		width: 60%;
+	}
 
-  .form-container form textarea {
-    width: 80%;
-  }
+	.form-container form textarea {
+		width: 80%;
+	}
 
-  .details .each-detail {
-    align-self: start;
-  }
+	.details .each-detail {
+		align-self: start;
+	}
 
-  .sec-three {
-    width: 85%;
-    height: 550px;
-  }
+	.sec-three {
+		width: 85%;
+		height: 550px;
+	}
 
-  .sec-four {
-    width: 85%;
-  }
+	.sec-four {
+		width: 85%;
+	}
 
-  .sec-three .tag {
-    width: 320px;
-  }
+	.sec-three .tag {
+		width: 320px;
+	}
 
-  .sec-four .tag {
-    width: 320px;
-  }
+	.sec-four .tag {
+		width: 320px;
+	}
 
-  .sec-three .form input {
-    width: 40%;
-  }
+	.sec-three .form input {
+		width: 40%;
+	}
 
-  .sec-three .form .radios {
-    width: 40%;
-  }
+	.sec-three .form .radios {
+		width: 40%;
+	}
 
-  .sec-three .form textarea {
-    width: 40%;
-  }
+	.sec-three .form textarea {
+		width: 40%;
+	}
 
-  .sec-four form {
-    width: 50%;
-  }
+	.sec-four form {
+		width: 50%;
+	}
 }
