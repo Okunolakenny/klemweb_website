@@ -54,7 +54,7 @@
 #service-dropdown2 h2 {
   font-size: 15px;
   line-height: 2.5em;
-  margin-left: 60px;
+  margin-left: 30px;
   cursor: pointer;
 }
 
@@ -155,7 +155,7 @@
   height: 100%;
   position: absolute;
   top: 0;
-  left: 18%;
+  left: 15.5%;
 }
 
 .services .box span:nth-of-type(3) {
@@ -163,7 +163,7 @@
   height: 100%;
   position: absolute;
   top: 0;
-  right: 41%;
+  right: 46%;
 }
 
 .services .box span:nth-of-type(4) {
@@ -171,7 +171,7 @@
   height: 100%;
   position: absolute;
   top: 0;
-  right: 26%;
+  right: 28%;
 }
 
 .services .box span:nth-of-type(5) {
@@ -179,7 +179,7 @@
   height: 100%;
   position: absolute;
   top: 0;
-  right: 10%;
+  right: 9.5%;
 }
 
 .services .box span:last-of-type {
@@ -260,7 +260,7 @@
 
 .main-services .container .text {
   align-items: flex-start;
-  height: 350px;
+  min-height: 350px;
   width: 45%;
   margin: auto;
 }

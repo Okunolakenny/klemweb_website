@@ -65,7 +65,7 @@ header {
   position: relative;
   position: fixed;
   z-index: 105;
-  top: 0;
+  top:0;
   box-shadow: 0 0 4px 6px #00000111;
 }
 
@@ -165,11 +165,12 @@ header .container .links .apply:hover {
     left: 0;
     top: 100px;
     transition: 1s;
-    background-color: #f1f1e7;
+    background-color: black;
     transform: translateY(-180vh);
+    opacity: .9;
   }
   header .container .links a {
-    color: #042453;
+    color:white;
     margin-bottom: 60px;
     font-size: 30px;
     text-align: center;

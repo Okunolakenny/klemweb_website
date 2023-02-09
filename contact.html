@@ -15,7 +15,17 @@
         <link rel="stylesheet" href="./css/footer.css">
         <link rel="stylesheet" href="./css/style.css">
         <link rel="stylesheet" href="./css/contact.css">
+        <link rel="icon" href="./Klemweb logos/logo.png">
+
     </head>
+    <div class="cohort">
+        <h3>Klemweb Cohort 1.0 Registration is still ongoing</h3>
+                <a href="https://www.cohort.klemweb.com" class="">Register Now</a>
+    </div>
+    <div class="cohort2">
+        <h3>Klemweb Cohort 1.0 Registration is still ongoing</h3>
+                <a href="https://www.cohort.klemweb.com" class="">Register Now</a>
+    </div>
 
     <body>
         <a href="https://wa.me/08136528369" target="_blank"><img src="./Assets/images/what3-removebg-preview.png" alt="" id="chat" title="Chat with us"></a>
@@ -92,7 +102,8 @@
                         </p>
                     </div>
                 </div>
-                <form action="">
+                <form action="https://formspree.io/f/mayzeewr" method="post" id="contact">
+                    <p id="my-form-status"></p>
                     <input type="text" name="name" placeholder="Enter Your name">
                     <input type="email" name="email" placeholder="Enter Email Address">
                     <textarea name="message" placeholder="Write your Message"></textarea>
@@ -104,8 +115,9 @@
             <div class="container">
                 <div>
                     <a href="./index.html"> <img src="./Assets/images/white logo-01.png" alt="" class="logo"></a>
-                    <h4>Ojongbodu Police Station, suit 1&2 farmers care building, Oyo-Iseyin Road, 200262. Oyo State,
-                        Nigereia</h4>
+                    <h4>
+               Suit 3, Farmer's Care, Opp. Adekaitan Petrol Station, Ojongbodu, Iseyin Road, Oyo State.
+            </h4>
                 </div>
                 <div>
                     <h1>About</h1>
@@ -119,6 +131,8 @@
                     <a href="services.html">Courses</a>
                     <a href="request.html">Request a service</a>
                     <a href="talent.html">Hire a talent</a>
+                     <a href="https://cohort.klemweb.com">Cohort</a>
+
                 </div>
                 <div>
                     <h1>Contact us</h1>
@@ -151,6 +165,54 @@
         <script src="./js/header.js"></script>
         <script src="./js/footer.js"></script>
         <script src="./js/headerServices.js"></script>
+        <script>
+
+            var form = document.getElementById("contact");
+                
+                async function handleSubmit(event) {
+                  event.preventDefault();
+                  var status = document.getElementById("my-form-status");
+                  var data = new FormData(event.target);
+                  fetch(event.target.action, {
+                    method: form.method,
+                    body: data,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                  }).then(response => {
+                    if (response.ok) {
+                      status.innerHTML = "We have received your message.";
+                      status.classList.toggle("show")
+                      setTimeout(() => {
+                          status.classList.remove("show")        
+                      }, 3000);
+                      form.reset()
+                    } else {
+                      response.json().then(data => {
+                          if (Object.hasOwn(data, 'errors')) {
+                              status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                              setTimeout(() => {
+                                  status.classList.remove("show")        
+                              }, 3000);
+                        } else {
+                          status.innerHTML = "Oops! There was a problem submitting your form"
+                          status.classList.toggle("show")
+                          setTimeout(() => {
+                              status.classList.remove("show")        
+                          }, 3000);
+                        }
+                    })
+                }
+            }).catch(error => {
+                status.innerHTML = "Oops! There was a problem submitting your form"
+                status.classList.toggle("show")
+                setTimeout(() => {
+                    status.classList.remove("show")        
+                }, 3000);
+            });
+            }
+            form.addEventListener("submit", handleSubmit)
+                    </script>
     </body>
 
 </html>

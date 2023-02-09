@@ -229,6 +229,7 @@ label span {
 
 .check {
   display: flex;
+  gap: 1rem;
   align-items: center;
   flex-basis: 30%;
 }
@@ -242,7 +243,6 @@ label span {
   color: #083994;
   width: 100%;
   font-size: 14px;
-  margin-left: 10px;
   cursor: pointer;
 }
 
@@ -257,10 +257,10 @@ label span {
 .how div {
   align-items: center;
   display: flex;
+  gap: .7rem;
 }
-.how span {
+.how label {
   color: #083994;
-  margin-left: 5px;
   cursor: pointer;
 }
 input[type="radio"] {
@@ -285,6 +285,7 @@ hr {
   display: flex;
   align-items: center;
   flex-basis: 30%;
+  gap: 1rem;
 }
 .conditions input[type="checkbox"] {
   width: 20px;
@@ -292,12 +293,11 @@ hr {
   height: 20px;
   cursor: pointer;
 }
-.conditions span {
+.conditions label{
   color: #083994;
   width: 100%;
   align-items: center;
   font-size: 16px;
-  margin-left: 5px;
 }
 /* Signature and date styles */
 .lines {

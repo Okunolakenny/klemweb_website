@@ -35,6 +35,7 @@ footer .container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    gap: 1.5rem;
 
 }
 
@@ -63,7 +64,8 @@ footer .container div:first-of-type {
 }
 
 footer .container div:first-of-type h4 {
-    text-align: left;
+    text-align: justify;
+    width: 300px;
 
 }
 
@@ -149,7 +151,7 @@ footer .container .apply_icons{
     justify-content: center;
     width: 300px;
     position: relative;
-    gap: 1rem;
+    gap: 3rem;
     
 }
 footer .container .apply_icons .icons {

@@ -12,8 +12,18 @@
         <link rel="stylesheet" href="./css/footer.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
         <link rel="stylesheet" href="./css/contact.css">
+        <link rel="icon" href="./Klemweb logos/logo.png">
+
 
     </head>
+    <div class="cohort">
+        <h3>Klemweb Cohort 1.0 Registration is still ongoing</h3>
+                <a href="https://www.cohort.klemweb.com" class="">Register Now</a>
+    </div>
+    <div class="cohort2">
+        <h3>Klemweb Cohort 1.0 Registration is still ongoing</h3>
+                <a href="https://www.cohort.klemweb.com" class="">Register Now</a>
+    </div>
     <!-- The services dropdown container -->
     <div id="service-dropdown">
         <div>
@@ -56,6 +66,7 @@
                 <span id="time"><i class="fas fa-times"></i></span>
             </div>
         </header>
+        <p id="my-form-status"></p>
         <div class="sec-three" id="hire">
             <div class="image">
                 <img src="./Assets/images/hire a talent.jpg" alt="">
@@ -66,35 +77,35 @@
                     Klemweb is one of the top creative digital company, dedicated to enriching digital experiences by
                     providing innovative
                 </p>
-                <form action="">
+                <form  id="talent" method="post" action="https://formspree.io/f/mdoveenr">
                     <div class="form">
-                        <input type="text" name="hire_name" placeholder="Enter your name" class="input">
-                        <input type="email" name="hire_email" placeholder="Enter email address" class="input">
-                        <input type="tel" name="hire_tel" placeholder="Enter phone number" class="input">
+                        <input type="text" name="name" placeholder="Enter your name" class="input" required>
+                        <input type="email" name="email" placeholder="Enter email address" class="input" required>
+                        <input type="tel" name="tel" placeholder="Enter phone number" class="input" required>
                         <div class="radios">
                             <div>
-                                <input type="checkbox" name="talent" value="Software Engineering" id="software" class="checkbox">
+                                <input type="checkbox" name="Software-Engineering" value="Software Engineering" id="software" class="checkbox">
                                 <label for="software">Software Engineer</label>
                             </div>
                             <div>
-                                <input type="checkbox" name="talent" value="Product Design" id="product_design" class="checkbox">
+                                <input type="checkbox" name="Product Designer" value="Product Design" id="product_design" class="checkbox">
                                 <label for="product_design">Product Designer</label>
                             </div>
 
                             <div>
-                            <input type="checkbox" name="talent" value="Robotics & A I" id="artificial" class="checkbox">
+                            <input type="checkbox" name="Robotics" value="Robotics & A I" id="artificial" class="checkbox">
                             <label for="artificial">Robotics & A I Expert</label>
                             </div>
                             <div>
-                                <input type="checkbox" name="talent" value="Cyber Security" id="software" class="checkbox">
+                                <input type="checkbox" name="cyberSecurity Expert" value="Cyber Security" id="software" class="checkbox">
                                 <label for="cyber">Cyber Security Expert</label>
                             </div>
                             <div>
-                            <input type="checkbox" name="talent" value=" Digital marketing" id="digital" class="checkbox">
+                            <input type="checkbox" name="Digital-Marketer" value=" Digital marketing" id="digital" class="checkbox" >
                                 <label for="digital">Digital Marketer</label>
                             </div>
                             <div>
-                            <input type="checkbox" name="talent" value="Data Science" id="data" class="checkbox">
+                            <input type="checkbox" name="Data Scientist" value="Data Science" id="data" class="checkbox">
                                 <label for="data">Data Scientist/ Analyst</label>
                             </div>
                         </div>
@@ -107,7 +118,7 @@
                         <option value="digital">Digital Marketer</option>
                         <option value="data_scientist">Data Scientist</option>
                     </select> -->
-                        <textarea name="additional" placeholder="Project Description"></textarea>
+                        <textarea name="Project Description" placeholder="Project Description"></textarea>
                     </div>
                     <input type="submit" value="Hire Talent">
                 </form>
@@ -175,8 +186,9 @@
             <div class="container">
                 <div>
                     <a href="./index.html"> <img src="./Assets/images/white logo-01.png" alt="" class="logo"></a>
-                    <h4>Ojongbodu Police Station, suit 1&2 farmers care building, Oyo-Iseyin Road, 200262. Oyo State,
-                        Nigereia</h4>
+                    <h4>
+               Suit 3, Farmer's Care, Opp. Adekaitan Petrol Station, Ojongbodu, Iseyin Road, Oyo State.
+            </h4>
                 </div>
                 <div>
                     <h1>About</h1>
@@ -190,6 +202,8 @@
                     <a href="services.html">Courses</a>
                     <a href="request.html">Request a service</a>
                     <a href="talent.html">Hire a talent</a>
+            <a href="https://cohort.klemweb.com">Cohort</a>
+
                 </div>
                 <div>
                     <h1>Contact us</h1>
@@ -223,6 +237,54 @@
         <script src="./js/header.js"></script>
         <script src="./js/script.js"></script>
         <script src="./js/headerServices.js"></script>
+        <script>
+
+var form = document.getElementById("talent");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("my-form-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        if (response.ok) {
+          status.innerHTML = "Thanks for your submission!";
+          status.classList.toggle("show")
+          setTimeout(() => {
+              status.classList.remove("show")        
+          }, 1000);
+          form.reset()
+        } else {
+          response.json().then(data => {
+              if (Object.hasOwn(data, 'errors')) {
+                  status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                  setTimeout(() => {
+                      status.classList.remove("show")        
+                  }, 1000);
+            } else {
+              status.innerHTML = "Oops! There was a problem submitting your form"
+              status.classList.toggle("show")
+              setTimeout(() => {
+                  status.classList.remove("show")        
+              }, 3000);
+            }
+        })
+    }
+}).catch(error => {
+    status.innerHTML = "Oops! There was a problem submitting your form"
+    status.classList.toggle("show")
+    setTimeout(() => {
+        status.classList.remove("show")        
+    }, 1000);
+});
+}
+form.addEventListener("submit", handleSubmit)
+        </script>
     </body>
 
 </html>

@@ -188,6 +188,7 @@ x .contents .image img {
 	display: flex;
 	margin: auto;
 	flex-direction: column;
+	text-align: justify;
 	gap: 2rem;
 }
 

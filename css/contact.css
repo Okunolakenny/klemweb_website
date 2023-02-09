@@ -173,7 +173,6 @@ textarea:focus {
     margin: 7rem auto 0;
     gap: 1rem;
     flex-direction: row;
-    /* height: 550px; */
     overflow: hidden;
     border-radius: 0.5rem;
 }
@@ -219,14 +218,41 @@ textarea:focus {
 .sec-three .form {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: .7rem;
     margin: auto;
     width: 100%;
     padding: 0 1rem;
     align-items: center;
     justify-content: center;
 }
-
+#my-form-status{
+    background: #205a20;
+    color: white;
+    padding: 1rem;
+    width: 25%;
+    right: 1rem;
+    min-width: fit-content;
+    font-size: 1.4rem;
+    display: none;
+    position: fixed;
+    top: 6rem;
+    z-index: 3000;
+    box-shadow: 0 2px 2px #0000004d;
+    border-radius: .2rem;
+    text-align: center;
+}
+#my-form-status.show{
+    display: block;
+    animation: slideInb 1s;
+}
+@keyframes slideInb {
+    from{
+        transform: translateX(720%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
 .sec-three .form .input {
     height: 3rem;
     width: 100% !important;

@@ -13,7 +13,15 @@ icon.forEach(function (value, i) {
     faq[i].classList.toggle("increase");
   });
 });
-
+let overlay = document.querySelector(".cohort-annoucement .overlay")
+let annoucement = document.querySelector(".cohort-annoucement")
+let closeBanner = document.querySelector(".close-banner")
+overlay.addEventListener('click', function () {
+  this.parentNode.classList.toggle("hide")
+})
+closeBanner.addEventListener("click", function() {
+  annoucement.classList.toggle("hide")
+})
 const swiper = new Swiper(".swiper", {
   autoplay: {
     delay: 5000,
